@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -16,8 +17,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:PPWindowBounds];
+    
+    [self showMainController];
+    
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)showMainController {
+    // 文档
+    TCVDocumentViewController *documentVC = [[TCVDocumentViewController alloc] init];
+    documentVC.title = @"文档";
+    TCVNavigationController *docuNav = [[TCVNavigationController alloc] initWithRootViewController:documentVC];
+    docuNav.tabBarItem.image = [UIImage imageNamed:@"file_box"];
+    
+    // 服务
+    TCVServiceViewController *serviceVC = [[TCVServiceViewController alloc] init];
+    serviceVC.title = @"服务";
+    TCVNavigationController *serviceNav = [[TCVNavigationController alloc] initWithRootViewController:serviceVC];
+    serviceNav.tabBarItem.image = [UIImage imageNamed:@"cloud"];
+    
+    // 设置
+    TCVSettingViewController *settingVC = [[TCVSettingViewController alloc] init];
+    settingVC.title = @"设置";
+    TCVNavigationController *settingNav = [[TCVNavigationController alloc] initWithRootViewController:settingVC];
+    settingNav.tabBarItem.image = [UIImage imageNamed:@"setting"];
+    
+    TCVTabbarController *tabbarCon = [[TCVTabbarController alloc] init];
+    tabbarCon.viewControllers = @[docuNav, serviceNav, settingNav];
+    
+    self.window.rootViewController = tabbarCon;
 }
 
 

@@ -8,24 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		0C50E33A200608AE002E9132 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E339200608AE002E9132 /* AppDelegate.m */; };
-		0C50E33D200608AE002E9132 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E33C200608AE002E9132 /* ViewController.m */; };
-		0C50E340200608AE002E9132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C50E33E200608AE002E9132 /* Main.storyboard */; };
 		0C50E342200608AE002E9132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C50E341200608AE002E9132 /* Assets.xcassets */; };
 		0C50E345200608AE002E9132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C50E343200608AE002E9132 /* LaunchScreen.storyboard */; };
 		0C50E348200608AE002E9132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E347200608AE002E9132 /* main.m */; };
+		0C50E35B200609C2002E9132 /* TCVTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E35A200609C2002E9132 /* TCVTabbarController.m */; };
+		0C50E35E200609D7002E9132 /* TCVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E35D200609D7002E9132 /* TCVNavigationController.m */; };
+		0C50E36220060A80002E9132 /* TCVAppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E36120060A80002E9132 /* TCVAppTool.m */; };
+		0C50E38D20060D95002E9132 /* TCVDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E38C20060D95002E9132 /* TCVDocumentViewController.m */; };
+		0C50E39020060DA8002E9132 /* TCVServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E38F20060DA8002E9132 /* TCVServiceViewController.m */; };
+		0C50E39320060DB3002E9132 /* TCVSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E39220060DB3002E9132 /* TCVSettingViewController.m */; };
+		0CCB706B200744EA000C2C6A /* TCVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB706A200744EA000C2C6A /* TCVFileTool.m */; };
+		0CCB7070200749DE000C2C6A /* TCVFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB706F200749DE000C2C6A /* TCVFileModel.m */; };
+		0CCB7073200749FC000C2C6A /* TCVFileListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB7072200749FC000C2C6A /* TCVFileListCell.m */; };
+		48CBEEB95F54C13422AFFBA6 /* libPods-TextCoderViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C50E335200608AE002E9132 /* TextCoderViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCoderViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C50E338200608AE002E9132 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C50E339200608AE002E9132 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C50E33B200608AE002E9132 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0C50E33C200608AE002E9132 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0C50E33F200608AE002E9132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C50E341200608AE002E9132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C50E344200608AE002E9132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C50E346200608AE002E9132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C50E347200608AE002E9132 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C50E359200609C2002E9132 /* TCVTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVTabbarController.h; sourceTree = "<group>"; };
+		0C50E35A200609C2002E9132 /* TCVTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVTabbarController.m; sourceTree = "<group>"; };
+		0C50E35C200609D7002E9132 /* TCVNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVNavigationController.h; sourceTree = "<group>"; };
+		0C50E35D200609D7002E9132 /* TCVNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVNavigationController.m; sourceTree = "<group>"; };
+		0C50E36020060A80002E9132 /* TCVAppTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVAppTool.h; sourceTree = "<group>"; };
+		0C50E36120060A80002E9132 /* TCVAppTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVAppTool.m; sourceTree = "<group>"; };
+		0C50E36320060AB1002E9132 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0C50E38720060C08002E9132 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0C50E38B20060D95002E9132 /* TCVDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVDocumentViewController.h; sourceTree = "<group>"; };
+		0C50E38C20060D95002E9132 /* TCVDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVDocumentViewController.m; sourceTree = "<group>"; };
+		0C50E38E20060DA8002E9132 /* TCVServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVServiceViewController.h; sourceTree = "<group>"; };
+		0C50E38F20060DA8002E9132 /* TCVServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVServiceViewController.m; sourceTree = "<group>"; };
+		0C50E39120060DB3002E9132 /* TCVSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVSettingViewController.h; sourceTree = "<group>"; };
+		0C50E39220060DB3002E9132 /* TCVSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVSettingViewController.m; sourceTree = "<group>"; };
+		0CCB7069200744EA000C2C6A /* TCVFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileTool.h; sourceTree = "<group>"; };
+		0CCB706A200744EA000C2C6A /* TCVFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVFileTool.m; sourceTree = "<group>"; };
+		0CCB706E200749DE000C2C6A /* TCVFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileModel.h; sourceTree = "<group>"; };
+		0CCB706F200749DE000C2C6A /* TCVFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVFileModel.m; sourceTree = "<group>"; };
+		0CCB7071200749FC000C2C6A /* TCVFileListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileListCell.h; sourceTree = "<group>"; };
+		0CCB7072200749FC000C2C6A /* TCVFileListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVFileListCell.m; sourceTree = "<group>"; };
+		1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextCoderViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABB0AF2980A0AD0E1AE844D /* Pods-TextCoderViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.release.xcconfig"; sourceTree = "<group>"; };
+		D5967FA60635AD2C52AEB969 /* Pods-TextCoderViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CBEEB95F54C13422AFFBA6 /* libPods-TextCoderViewer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +73,8 @@
 			children = (
 				0C50E337200608AE002E9132 /* TextCoderViewer */,
 				0C50E336200608AE002E9132 /* Products */,
+				A63C486CBCF5ED1AD4BC27E1 /* Pods */,
+				929CD03211A02E456C33357C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +89,187 @@
 		0C50E337200608AE002E9132 /* TextCoderViewer */ = {
 			isa = PBXGroup;
 			children = (
+				0C50E3552006096A002E9132 /* Tools */,
+				0C50E35220060934002E9132 /* Categories */,
+				0C50E35320060934002E9132 /* Libraries */,
+				0C50E34F20060934002E9132 /* Main */,
+				0C50E34E200608DB002E9132 /* OtherFile */,
 				0C50E338200608AE002E9132 /* AppDelegate.h */,
 				0C50E339200608AE002E9132 /* AppDelegate.m */,
-				0C50E33B200608AE002E9132 /* ViewController.h */,
-				0C50E33C200608AE002E9132 /* ViewController.m */,
-				0C50E33E200608AE002E9132 /* Main.storyboard */,
-				0C50E341200608AE002E9132 /* Assets.xcassets */,
-				0C50E343200608AE002E9132 /* LaunchScreen.storyboard */,
 				0C50E346200608AE002E9132 /* Info.plist */,
-				0C50E347200608AE002E9132 /* main.m */,
+				0C50E38720060C08002E9132 /* PrefixHeader.pch */,
 			);
 			path = TextCoderViewer;
+			sourceTree = "<group>";
+		};
+		0C50E34E200608DB002E9132 /* OtherFile */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E341200608AE002E9132 /* Assets.xcassets */,
+				0C50E343200608AE002E9132 /* LaunchScreen.storyboard */,
+				0C50E347200608AE002E9132 /* main.m */,
+			);
+			path = OtherFile;
+			sourceTree = "<group>";
+		};
+		0C50E34F20060934002E9132 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E38820060D52002E9132 /* Document */,
+				0C50E38A20060D53002E9132 /* Service */,
+				0C50E38920060D52002E9132 /* Setting */,
+				0C50E35020060934002E9132 /* Navigation */,
+				0C50E35120060934002E9132 /* Tabbar */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0C50E35020060934002E9132 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E35C200609D7002E9132 /* TCVNavigationController.h */,
+				0C50E35D200609D7002E9132 /* TCVNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0C50E35120060934002E9132 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E359200609C2002E9132 /* TCVTabbarController.h */,
+				0C50E35A200609C2002E9132 /* TCVTabbarController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		0C50E35220060934002E9132 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E36320060AB1002E9132 /* Singleton.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0C50E35320060934002E9132 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		0C50E3552006096A002E9132 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0CCB7068200744D7000C2C6A /* File */,
+				0C50E35F20060A6C002E9132 /* App */,
+				0C50E35720060993002E9132 /* Data */,
+				0C50E35820060993002E9132 /* Download */,
+				0C50E35620060993002E9132 /* Http */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0C50E35620060993002E9132 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		0C50E35720060993002E9132 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0C50E35820060993002E9132 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		0C50E35F20060A6C002E9132 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E36020060A80002E9132 /* TCVAppTool.h */,
+				0C50E36120060A80002E9132 /* TCVAppTool.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0C50E38820060D52002E9132 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				0CCB706D200745F1000C2C6A /* Model */,
+				0CCB706C200745F1000C2C6A /* View */,
+				0C50E38B20060D95002E9132 /* TCVDocumentViewController.h */,
+				0C50E38C20060D95002E9132 /* TCVDocumentViewController.m */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		0C50E38920060D52002E9132 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E39120060DB3002E9132 /* TCVSettingViewController.h */,
+				0C50E39220060DB3002E9132 /* TCVSettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0C50E38A20060D53002E9132 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C50E38E20060DA8002E9132 /* TCVServiceViewController.h */,
+				0C50E38F20060DA8002E9132 /* TCVServiceViewController.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0CCB7068200744D7000C2C6A /* File */ = {
+			isa = PBXGroup;
+			children = (
+				0CCB7069200744EA000C2C6A /* TCVFileTool.h */,
+				0CCB706A200744EA000C2C6A /* TCVFileTool.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		0CCB706C200745F1000C2C6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CCB7071200749FC000C2C6A /* TCVFileListCell.h */,
+				0CCB7072200749FC000C2C6A /* TCVFileListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CCB706D200745F1000C2C6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CCB706E200749DE000C2C6A /* TCVFileModel.h */,
+				0CCB706F200749DE000C2C6A /* TCVFileModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		929CD03211A02E456C33357C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A63C486CBCF5ED1AD4BC27E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5967FA60635AD2C52AEB969 /* Pods-TextCoderViewer.debug.xcconfig */,
+				BABB0AF2980A0AD0E1AE844D /* Pods-TextCoderViewer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C50E34B200608AE002E9132 /* Build configuration list for PBXNativeTarget "TextCoderViewer" */;
 			buildPhases = (
+				551227B463C6C45653AA0D16 /* [CP] Check Pods Manifest.lock */,
 				0C50E331200608AE002E9132 /* Sources */,
 				0C50E332200608AE002E9132 /* Frameworks */,
 				0C50E333200608AE002E9132 /* Resources */,
+				A7A4CB78FBD551891BC410B7 /* [CP] Embed Pods Frameworks */,
+				F5799F11087DD413C7D54E0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +301,7 @@
 		0C50E32D200608AE002E9132 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TCV;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Garenge;
 				TargetAttributes = {
@@ -131,34 +336,84 @@
 			files = (
 				0C50E345200608AE002E9132 /* LaunchScreen.storyboard in Resources */,
 				0C50E342200608AE002E9132 /* Assets.xcassets in Resources */,
-				0C50E340200608AE002E9132 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		551227B463C6C45653AA0D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextCoderViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A4CB78FBD551891BC410B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5799F11087DD413C7D54E0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C50E331200608AE002E9132 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C50E33D200608AE002E9132 /* ViewController.m in Sources */,
+				0C50E35B200609C2002E9132 /* TCVTabbarController.m in Sources */,
+				0C50E38D20060D95002E9132 /* TCVDocumentViewController.m in Sources */,
+				0C50E35E200609D7002E9132 /* TCVNavigationController.m in Sources */,
 				0C50E348200608AE002E9132 /* main.m in Sources */,
 				0C50E33A200608AE002E9132 /* AppDelegate.m in Sources */,
+				0C50E36220060A80002E9132 /* TCVAppTool.m in Sources */,
+				0CCB706B200744EA000C2C6A /* TCVFileTool.m in Sources */,
+				0CCB7070200749DE000C2C6A /* TCVFileModel.m in Sources */,
+				0C50E39020060DA8002E9132 /* TCVServiceViewController.m in Sources */,
+				0CCB7073200749FC000C2C6A /* TCVFileListCell.m in Sources */,
+				0C50E39320060DB3002E9132 /* TCVSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C50E33E200608AE002E9132 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C50E33F200608AE002E9132 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C50E343200608AE002E9132 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,10 +531,12 @@
 		};
 		0C50E34C200608AE002E9132 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5967FA60635AD2C52AEB969 /* Pods-TextCoderViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7W6597ZYH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TextCoderViewer/PrefixHeader.pch";
 				INFOPLIST_FILE = TextCoderViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lzp.TextCoderViewer;
@@ -290,10 +547,12 @@
 		};
 		0C50E34D200608AE002E9132 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BABB0AF2980A0AD0E1AE844D /* Pods-TextCoderViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7W6597ZYH;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TextCoderViewer/PrefixHeader.pch";
 				INFOPLIST_FILE = TextCoderViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lzp.TextCoderViewer;

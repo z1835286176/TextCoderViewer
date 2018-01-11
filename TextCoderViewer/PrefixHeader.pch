@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  TextCoderViewer
+//
+//  Created by istLZP on 2018/1/10.
+//  Copyright © 2018年 Garenge. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "TCVNavigationController.h"
+#import "TCVTabbarController.h"
+#import "TCVDocumentViewController.h"
+#import "TCVServiceViewController.h"
+#import "TCVSettingViewController.h"
+#import "TCVAppTool.h"
+#import "TCVFileTool.h"
+
+#import "TCVFileModel.h"
+
+#import "Masonry.h" // 约束
+#import "PPManagers.h" // 自己写的小工具类
+
+#endif
+
+#endif /* PrefixHeader_pch */
