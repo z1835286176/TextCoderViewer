@@ -12,4 +12,9 @@
 
 @property (nonatomic, strong) TCVFileModel *fileModel;
 
+/** 编辑模式 */
+- (void)beganToEdit:(BOOL)isEditing;
+
+/** 是否选中 */
+@property (nonatomic, assign) BOOL isSeled;
 @end

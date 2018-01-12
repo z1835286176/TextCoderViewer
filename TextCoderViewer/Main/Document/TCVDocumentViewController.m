@@ -10,6 +10,12 @@
 #import "TCVDocumentViewController.h"
 #import "TCVFileListCell.h"
 
+/** condition of the documentView, normal or editing */
+typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
+    TCVDocumentConditionStyleNormal = 1,
+    TCVDocumentConditionStyleEditing,
+};
+
 @interface TCVDocumentViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -17,8 +23,13 @@
 /** 数据源 */
 @property (nonatomic, strong) NSMutableArray *linesM;
 
+/** 编辑模式下的被选中数据源 */
+@property (nonatomic, strong) NSMutableArray *linesMSeled;
+
 /** 该层的完整路径, 用于给下层的 superPath 使用 */
 @property (nonatomic, strong) NSString *completePath;
+
+@property (nonatomic, assign) TCVDocumentConditionStyle documentConditionStyle;
 
 @end
 
@@ -46,11 +57,33 @@
     return _linesM;
 }
 
+- (NSMutableArray *)linesMSeled {
+    if(nil == _linesMSeled) {
+        _linesMSeled = [NSMutableArray array];
+    }
+    return _linesMSeled;
+}
+
+- (TCVDocumentConditionStyle)documentConditionStyle {
+    if(_documentConditionStyle > 0) {
+        return _documentConditionStyle;
+    } else {
+        return TCVDocumentConditionStyleNormal;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = self.dirName.length > 0 ? self.dirName : @"文档";
+    [self createNavigationItems];
     [self prepareData];
     [self createTableView];
+}
+
+- (void)createNavigationItems {
+    UIBarButtonItem *addMoreItem = [[UIBarButtonItem alloc] initWithImage:UIImageWithImageName(@"PLUS") style:UIBarButtonItemStyleDone target:self action:@selector(showMoreOperation)];
+    UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(editAllCells:)];
+    self.navigationItem.rightBarButtonItems = @[editItem, addMoreItem];
 }
 
 - (void)prepareData {
@@ -72,9 +105,11 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.separatorStyle = 
+    tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.view addSubview:tableView];
     self.tableView = tableView;
+    
+    tableView.tableFooterView = [[UIView alloc] init]; // 这个用途是: 有数据的部分有分割线, 没数据的部分 全是空白
 }
 
 #pragma mark tableView delegate dataSource
@@ -96,6 +131,10 @@
     TCVFileModel *fileModel = self.linesM[indexPath.row];
     cell.fileModel = fileModel;
     
+    if(self.documentConditionStyle == TCVDocumentConditionStyleEditing) {
+        cell.isSeled = [self.linesMSeled containsObject:fileModel];
+    }
+    
     return cell;
 }
 
@@ -103,8 +142,66 @@
     return 64;
 }
 
+// 移除iOS7之后，cell默认左侧的分割线边距
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{ 
+    cell.separatorInset = UIEdgeInsetsZero;
+    cell.layoutMargins = UIEdgeInsetsZero;
+    cell.preservesSuperviewLayoutMargins = NO;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    TCVFileModel *fileModel = self.linesM[indexPath.row];
+    if(self.documentConditionStyle == TCVDocumentConditionStyleNormal) {
+        
+        // 普通模式
+        if(fileModel.isDir) {
+            // 如果是文件夹, 跳转到下一页面并显示
+            TCVDocumentViewController *documentVC = [[TCVDocumentViewController alloc] init];
+            documentVC.dirName = fileModel.name;
+            documentVC.superPath = self.completePath;
+            [self.navigationController pushViewController:documentVC animated:YES];
+        }
+    } else {
+        // 编辑模式
+        // 点击之后加到数组中
+        NSLog(@"点击之后加到数组中");
+        TCVFileListCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        if([self.linesMSeled containsObject:fileModel]) {
+            [self.linesMSeled removeObject:fileModel];
+            cell.isSeled = NO;
+        } else {
+            [self.linesMSeled addObject:fileModel];
+            cell.isSeled = YES;
+        }
+    }
+}
+
+#pragma mark barButtonItem action
+- (void)showMoreOperation {
+    NSLog(@"%s", __FUNCTION__);
+}
+
+- (void)editAllCells:(UIBarButtonItem *)sender {
+    NSLog(@"%s", __FUNCTION__);
+    
+    self.documentConditionStyle = 3 - self.documentConditionStyle;
+    /** 切换编辑形式, 这个编辑就不用 tableView的编辑了, 直接自己实现就OK
+     *  tableView的编辑形式会把cell.contentView的位置改变, 不需要
+     */
+    self.tabBarController.tabBar.hidden = self.documentConditionStyle == TCVDocumentConditionStyleEditing;
+    sender.title = NSStringWithCondition(self.documentConditionStyle, TCVDocumentConditionStyleNormal, @"编辑", TCVDocumentConditionStyleEditing, @"完成");
+    NSInteger count = self.linesM.count;
+    for(NSInteger index = 0; index < count; index ++) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+        TCVFileListCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        [cell beganToEdit:self.documentConditionStyle == TCVDocumentConditionStyleEditing];
+    }
+    
+    if(self.documentConditionStyle == TCVDocumentConditionStyleNormal) {
+        [self.linesMSeled removeAllObjects];
+    }
 }
 
 @end

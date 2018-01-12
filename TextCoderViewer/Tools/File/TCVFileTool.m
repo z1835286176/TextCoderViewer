@@ -79,6 +79,8 @@
         }
         NSString *filePath = [directoriesPath stringByAppendingPathComponent:name];
         BOOL isDir = [self checkFileWhetherDirectory:filePath];
+        // NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfItemAtPath:directoriesPath error:&error];
+        // NSLog(@"%@", dictionary);
         TCVFileModel *fileModel = [TCVFileModel fileModelWithName:name IsDirl:isDir];
         [resultes addObject:fileModel];
     }
