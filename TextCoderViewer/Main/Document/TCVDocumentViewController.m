@@ -20,6 +20,11 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 
 @property (nonatomic, strong) UITableView *tableView;
 
+/** 更多操作按钮 */
+@property (nonatomic, strong) UIBarButtonItem *addMoreItem;
+/** 编辑按钮 */
+@property (nonatomic, strong) UIBarButtonItem *editItem;
+
 /** 数据源 */
 @property (nonatomic, strong) NSMutableArray *linesM;
 
@@ -82,7 +87,9 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 
 - (void)createNavigationItems {
     UIBarButtonItem *addMoreItem = [[UIBarButtonItem alloc] initWithImage:UIImageWithImageName(@"PLUS") style:UIBarButtonItemStyleDone target:self action:@selector(showMoreOperation)];
+    self.addMoreItem = addMoreItem;
     UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(editAllCells:)];
+    self.editItem = editItem;
     self.navigationItem.rightBarButtonItems = @[editItem, addMoreItem];
 }
 
@@ -181,6 +188,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 #pragma mark barButtonItem action
 - (void)showMoreOperation {
     NSLog(@"%s", __FUNCTION__);
+    [self documentsetEditStatus:NO];
 }
 
 - (void)editAllCells:(UIBarButtonItem *)sender {
@@ -190,18 +198,27 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     /** 切换编辑形式, 这个编辑就不用 tableView的编辑了, 直接自己实现就OK
      *  tableView的编辑形式会把cell.contentView的位置改变, 不需要
      */
-    self.tabBarController.tabBar.hidden = self.documentConditionStyle == TCVDocumentConditionStyleEditing;
-    sender.title = NSStringWithCondition(self.documentConditionStyle, TCVDocumentConditionStyleNormal, @"编辑", TCVDocumentConditionStyleEditing, @"完成");
+    [self documentsetEditStatus:self.documentConditionStyle == TCVDocumentConditionStyleEditing];
+        
+}
+
+- (void)documentsetEditStatus:(BOOL)editing {
+    
+    // 保守起见, 设置一遍self.documentConditionStyle = TCVDocumentConditionStyleEditing
+    self.documentConditionStyle = editing ? TCVDocumentConditionStyleEditing : TCVDocumentConditionStyleNormal;
+#warning 设置隐藏
+//    self.addMoreItem.
+    self.tabBarController.tabBar.hidden = editing;
+    self.editItem.title = editing ? @"完成" : @"编辑";
     NSInteger count = self.linesM.count;
     for(NSInteger index = 0; index < count; index ++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
         TCVFileListCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        [cell beganToEdit:self.documentConditionStyle == TCVDocumentConditionStyleEditing];
+        [cell beganToEdit:editing];
     }
     
-    if(self.documentConditionStyle == TCVDocumentConditionStyleNormal) {
+    if(editing) {
         [self.linesMSeled removeAllObjects];
     }
 }
-
 @end
