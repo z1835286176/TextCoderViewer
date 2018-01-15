@@ -111,6 +111,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     self.navigationItem.rightBarButtonItems = self.documentConditionStyle == TCVDocumentConditionStyleNormal ? @[self.editItem, self.addMoreItem] : @[self.editItem];
 }
 
+
 - (void)prepareData {
     if(self.linesM.count == 0) {
         [TCVFileTool getFileListsWithDirectoryName:self.dirName superPath:self.superPath CompleteHandler:^(NSString *completePath, NSArray *results) {
@@ -135,6 +136,19 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     self.tableView = tableView;
     
     tableView.tableFooterView = [[UIView alloc] init]; // 这个用途是: 有数据的部分有分割线, 没数据的部分 全是空白
+    
+    /** 方法A
+     *  设置self.tableView 分割线距离左右都是0
+     *  方法B 实现下面的方法
+     // 移除iOS7之后，cell默认左侧的分割线边距
+     //- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+     //    cell.layoutMargins = UIEdgeInsetsZero;
+     //    cell.separatorInset = UIEdgeInsetsZero;
+     //    cell.preservesSuperviewLayoutMargins = NO;
+     //}
+     */
+    [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    [self.tableView setLayoutMargins:UIEdgeInsetsZero];
 }
 
 #pragma mark tableView delegate dataSource
@@ -167,13 +181,6 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     return 64;
 }
 
-// 移除iOS7之后，cell默认左侧的分割线边距
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{ 
-    cell.separatorInset = UIEdgeInsetsZero;
-    cell.layoutMargins = UIEdgeInsetsZero;
-    cell.preservesSuperviewLayoutMargins = NO;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
@@ -204,11 +211,13 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 }
 
 #pragma mark barButtonItem action
+/** add 按钮 */
 - (void)showMoreOperation {
     NSLog(@"%s", __FUNCTION__);
     [self documentsetEditStatus:NO];
 }
 
+/** 编辑按钮 */
 - (void)editAllCells {
     NSLog(@"%s", __FUNCTION__);
     
@@ -220,6 +229,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
         
 }
 
+/** 切换编辑模式 */
 - (void)documentsetEditStatus:(BOOL)editing {
     
     // 保守起见, 设置一遍self.documentConditionStyle = TCVDocumentConditionStyleEditing

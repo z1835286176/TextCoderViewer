@@ -17,15 +17,20 @@ typedef NS_ENUM(NSInteger, TCVFileType) {
 
 @interface TCVFileModel : NSObject
 
+/** 当前文件名 */
 @property (nonatomic, strong) NSString *name;
-
+/** 是不是文件夹 */
 @property (nonatomic, assign) BOOL isDir;
-
+/** 文件类型 */
 @property (nonatomic, assign) TCVFileType fileType;
-
+/** 文件大小 */
 @property (nonatomic, assign) NSUInteger size;
-
-@property (nonatomic, strong) NSString *superDir;
+/** 绝对路径 */
+@property (nonatomic, strong) NSString *absolutelyPath;
+/** 上层文件夹名称 */
+@property (nonatomic, strong) NSString *superDirName;
+/** 上层文件夹路径 */
+@property (nonatomic, strong) NSString *superDirPath;
 
 - (instancetype)initWithName:(NSString *)name IsDirl:(BOOL)isDir;
 
