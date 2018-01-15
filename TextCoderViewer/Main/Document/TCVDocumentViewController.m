@@ -55,6 +55,20 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     return _superPath;
 }
 
+- (UIBarButtonItem *)addMoreItem {
+    if(nil == _addMoreItem) {
+        _addMoreItem = [[UIBarButtonItem alloc] initWithImage:UIImageWithImageName(@"PLUS") style:UIBarButtonItemStyleDone target:self action:@selector(showMoreOperation)];
+    }
+    return _addMoreItem;
+}
+
+- (UIBarButtonItem *)editItem {
+    if(nil == _editItem) {
+        _editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(editAllCells)];
+    }
+    return _editItem;
+}
+
 - (NSMutableArray *)linesM {
     if(nil == _linesM) {
         _linesM = [NSMutableArray array];
@@ -80,17 +94,21 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = self.dirName.length > 0 ? self.dirName : @"文档";
-    [self createNavigationItems];
+    [self setUpBackBarButtonItem];
+    [self setUpRightBarButtonItems];
     [self prepareData];
     [self createTableView];
 }
 
-- (void)createNavigationItems {
-    UIBarButtonItem *addMoreItem = [[UIBarButtonItem alloc] initWithImage:UIImageWithImageName(@"PLUS") style:UIBarButtonItemStyleDone target:self action:@selector(showMoreOperation)];
-    self.addMoreItem = addMoreItem;
-    UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(editAllCells:)];
-    self.editItem = editItem;
-    self.navigationItem.rightBarButtonItems = @[editItem, addMoreItem];
+- (void)setUpBackBarButtonItem {
+    UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] init];
+    backBtn.title = @"返回";
+    self.navigationItem.backBarButtonItem = backBtn;
+    // 注意这里的self是父ViewController,不是即将显示的子ViewController
+}
+
+- (void)setUpRightBarButtonItems {
+    self.navigationItem.rightBarButtonItems = self.documentConditionStyle == TCVDocumentConditionStyleNormal ? @[self.editItem, self.addMoreItem] : @[self.editItem];
 }
 
 - (void)prepareData {
@@ -191,7 +209,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     [self documentsetEditStatus:NO];
 }
 
-- (void)editAllCells:(UIBarButtonItem *)sender {
+- (void)editAllCells {
     NSLog(@"%s", __FUNCTION__);
     
     self.documentConditionStyle = 3 - self.documentConditionStyle;
@@ -206,8 +224,9 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     
     // 保守起见, 设置一遍self.documentConditionStyle = TCVDocumentConditionStyleEditing
     self.documentConditionStyle = editing ? TCVDocumentConditionStyleEditing : TCVDocumentConditionStyleNormal;
-#warning 设置隐藏
-//    self.addMoreItem.
+    
+    [self setUpRightBarButtonItems];
+    
     self.tabBarController.tabBar.hidden = editing;
     self.editItem.title = editing ? @"完成" : @"编辑";
     NSInteger count = self.linesM.count;
