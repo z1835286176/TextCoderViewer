@@ -25,7 +25,7 @@
     } else {
         [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:NO attributes:nil error:&createDirError];
         if(createDirError) {
-            NSLog(@"%@", createDirError);
+            PPLog(@"%@", createDirError);
             return NO;
         } else {
             return YES;
@@ -57,13 +57,15 @@
         directoriesPath = [superPath stringByAppendingPathComponent:dirName];
     }
     
+    PPLog(@"%@", directoriesPath);
+    
     if(directoriesPath.length == 0) {
         return;
     }
     
     BOOL dirExist = [self checkDirectoryExistAtPath:directoriesPath];
     if(!dirExist) {
-        NSLog(@"文件夹不存在:%@", directoriesPath);
+        PPLog(@"文件夹不存在:%@", directoriesPath);
         return;
     }
     
@@ -79,9 +81,16 @@
         }
         NSString *filePath = [directoriesPath stringByAppendingPathComponent:name];
         BOOL isDir = [self checkFileWhetherDirectory:filePath];
-        // NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfItemAtPath:directoriesPath error:&error];
-        // NSLog(@"%@", dictionary);
+        NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath error:&error];
+        // PPLog(@"%@", dictionary);
+        
         TCVFileModel *fileModel = [TCVFileModel fileModelWithName:name IsDirl:isDir];
+        fileModel.superDirName = dirName;
+        fileModel.superDirPath = directoriesPath;
+        fileModel.absolutelyPath = filePath;
+        fileModel.size = [dictionary fileSize];
+        fileModel.modificationDate = [dictionary fileModificationDate]; // 取文件修改时间
+        
         [resultes addObject:fileModel];
     }
     completeHandler(directoriesPath, resultes);

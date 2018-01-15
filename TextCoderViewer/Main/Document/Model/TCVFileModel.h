@@ -25,6 +25,8 @@ typedef NS_ENUM(NSInteger, TCVFileType) {
 @property (nonatomic, assign) TCVFileType fileType;
 /** 文件大小 */
 @property (nonatomic, assign) NSUInteger size;
+/** 文件修改时间 */
+@property (nonatomic, strong) NSDate *modificationDate;
 /** 绝对路径 */
 @property (nonatomic, strong) NSString *absolutelyPath;
 /** 上层文件夹名称 */

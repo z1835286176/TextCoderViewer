@@ -91,12 +91,15 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self prepareData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = self.dirName.length > 0 ? self.dirName : @"文档";
     [self setUpBackBarButtonItem];
     [self setUpRightBarButtonItems];
-    [self prepareData];
     [self createTableView];
 }
 
@@ -113,18 +116,18 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 
 
 - (void)prepareData {
-    if(self.linesM.count == 0) {
-        [TCVFileTool getFileListsWithDirectoryName:self.dirName superPath:self.superPath CompleteHandler:^(NSString *completePath, NSArray *results) {
-            if(completePath.length > 0) {
-                self.completePath = completePath;
-            }
-            if(results.count > 0) {
-                [self.linesM removeAllObjects];
-                [self.linesM addObjectsFromArray:results];
-                [self.tableView reloadData];
-            }
-        }];
-    }
+
+    [TCVFileTool getFileListsWithDirectoryName:self.dirName superPath:self.superPath CompleteHandler:^(NSString *completePath, NSArray *results) {
+        if(completePath.length > 0) {
+            self.completePath = completePath;
+        }
+        if(results.count > 0) {
+            [self.linesM removeAllObjects];
+            [self.linesM addObjectsFromArray:results];
+            [self.tableView reloadData];
+        }
+    }];
+    
 }
 
 - (void)createTableView {
@@ -198,7 +201,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     } else {
         // 编辑模式
         // 点击之后加到数组中
-        NSLog(@"点击之后加到数组中");
+        PPLog(@"点击之后加到数组中");
         TCVFileListCell *cell = [tableView cellForRowAtIndexPath:indexPath];
         if([self.linesMSeled containsObject:fileModel]) {
             [self.linesMSeled removeObject:fileModel];
@@ -213,13 +216,13 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 #pragma mark barButtonItem action
 /** add 按钮 */
 - (void)showMoreOperation {
-    NSLog(@"%s", __FUNCTION__);
+    PPLog(@"%s", __FUNCTION__);
     [self documentsetEditStatus:NO];
 }
 
 /** 编辑按钮 */
 - (void)editAllCells {
-    NSLog(@"%s", __FUNCTION__);
+    PPLog(@"%s", __FUNCTION__);
     
     self.documentConditionStyle = 3 - self.documentConditionStyle;
     /** 切换编辑形式, 这个编辑就不用 tableView的编辑了, 直接自己实现就OK

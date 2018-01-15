@@ -62,8 +62,10 @@
         [self.contentView addSubview:timeLabel];
         self.timeLabel = timeLabel;
         
+        CGFloat width = [UILabel textWidthWithString:@"一天前" andFont:[UIFont systemFontOfSize:11] andHight:21] + 0.5;
         [timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.height.right.equalTo(nameLabel);
+            make.left.height.equalTo(nameLabel);
+            make.width.mas_equalTo(width);
             make.bottom.equalTo(imageView.mas_bottom).with.offset(5);
         }];
     }
@@ -76,9 +78,41 @@
     [self.fileImageView setImage:UIImageWithImageName(fileModel.isDir ? @"Folder_Desktop" : @"file")];
     
     self.nameLabel.text = fileModel.name;
-//    self.timeLabel.text = fileModel
-//    self.sizeLabel.text =
+    NSString *timeString = [PPDateManager checkTimeIntervalSinceGivenDate:fileModel.modificationDate];
+    self.timeLabel.text = timeString;
+    CGFloat width = [UILabel textWidthWithString:timeString andFont:[UIFont systemFontOfSize:11] andHight:21] + 0.5;
+    [self.timeLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(width);
+    }];
     
+    if(fileModel.isDir) {
+        if(self.sizeLabel) {
+            self.sizeLabel.hidden = YES;
+        }
+    } else {
+        
+        if(nil == self.sizeLabel) {
+            UILabel *sizeLabel = [[UILabel alloc] init];
+            [sizeLabel setFont:[UIFont systemFontOfSize:11]];
+            [sizeLabel setText:@"100kb"];
+            [self.contentView addSubview:sizeLabel];
+            self.sizeLabel = sizeLabel;
+            
+            [sizeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.timeLabel.mas_right).with.offset(5);
+                make.centerY.height.equalTo(self.timeLabel);
+                make.width.mas_equalTo(50);
+            }];
+        }
+        
+        self.sizeLabel.hidden = NO;
+        NSString *sizeString = [NSString stringWithFormat:@" · %@", [PPDataManager checkByteIntervalWithGivenBytes:fileModel.size]];
+        self.sizeLabel.text = sizeString;
+        width = [UILabel textWidthWithString:sizeString andFont:[UIFont systemFontOfSize:11] andHight:21] + 0.5;
+        [self.sizeLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(width);
+        }];
+    }
 }
 
 - (void)beganToEdit:(BOOL)isEditing {
