@@ -13,4 +13,6 @@
 
 singleton_interface(TCVAppTool)
 
+UIFont *UIFontWithBoldSize(CGFloat size);
+
 @end

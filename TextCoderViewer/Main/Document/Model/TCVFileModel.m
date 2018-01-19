@@ -10,16 +10,4 @@
 
 @implementation TCVFileModel
 
-- (instancetype)initWithName:(NSString *)name IsDirl:(BOOL)isDir {
-    if(self = [super init]) {
-        self.name = name;
-        self.isDir = isDir;
-    }
-    return self;
-}
-
-+ (instancetype)fileModelWithName:(NSString *)name IsDirl:(BOOL)isDir {
-    return [[self alloc] initWithName:name IsDirl:isDir];
-}
-
 @end

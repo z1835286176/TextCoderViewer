@@ -14,6 +14,19 @@
 
 @implementation TCVNavigationController
 
++ (void)initialize {
+    if(self == [TCVNavigationController class]) {
+        
+        UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+        navBar.barTintColor = [UIColor whiteColor];
+        navBar.backgroundColor = [UIColor whiteColor];
+        
+        NSMutableDictionary *attribute = [NSMutableDictionary dictionary];
+        attribute[NSFontAttributeName] = UIFontWithBoldSize(16);
+        [navBar setTitleTextAttributes:attribute];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

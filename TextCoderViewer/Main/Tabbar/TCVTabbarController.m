@@ -1,18 +1,37 @@
 //
-//  TCVTabbarController.m
+//  TCVTabBarController.m
 //  TextCoderViewer
 //
 //  Created by istLZP on 2018/1/10.
 //  Copyright © 2018年 Garenge. All rights reserved.
 //
 
-#import "TCVTabbarController.h"
+#import "TCVTabBarController.h"
 
-@interface TCVTabbarController ()
+@interface TCVTabBarController ()
 
 @end
 
-@implementation TCVTabbarController
+@implementation TCVTabBarController
+
++ (void)initialize {
+    // 保险判断
+    if(self == [TCVTabBarController class]) {
+        
+        // 更改该项目中使用到的tabbar
+        UITabBar *tabBar = [UITabBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+        tabBar.barTintColor = [UIColor whiteColor];
+        tabBar.backgroundColor = [UIColor whiteColor];
+        
+        UITabBarItem *tabBarItem = [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[self]];
+        
+        // 普通字体
+        NSMutableDictionary *attributeNormal = [NSMutableDictionary dictionary];
+        attributeNormal[NSForegroundColorAttributeName] = [UIColor grayColor];
+        [tabBarItem setTitleTextAttributes:attributeNormal forState:UIControlStateNormal];
+
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -12,4 +12,9 @@
 
 singleton_implementation(TCVAppTool)
 
+
+UIFont *UIFontWithBoldSize(CGFloat size) {
+    return [UIFont boldSystemFontOfSize:size];
+}
+
 @end

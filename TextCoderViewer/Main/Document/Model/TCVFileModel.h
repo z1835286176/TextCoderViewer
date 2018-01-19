@@ -27,15 +27,11 @@ typedef NS_ENUM(NSInteger, TCVFileType) {
 @property (nonatomic, assign) NSUInteger size;
 /** 文件修改时间 */
 @property (nonatomic, strong) NSDate *modificationDate;
-/** 绝对路径 */
-@property (nonatomic, strong) NSString *absolutelyPath;
+/** 相对于Documents的路径 */
+@property (nonatomic, strong) NSString *relativePath;
 /** 上层文件夹名称 */
 @property (nonatomic, strong) NSString *superDirName;
-/** 上层文件夹路径 */
-@property (nonatomic, strong) NSString *superDirPath;
-
-- (instancetype)initWithName:(NSString *)name IsDirl:(BOOL)isDir;
-
-+ (instancetype)fileModelWithName:(NSString *)name IsDirl:(BOOL)isDir;
+/** 上层文件夹相对于Documents的路径 */
+@property (nonatomic, strong) NSString *superDirRelativePath;
 
 @end

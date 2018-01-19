@@ -1,5 +1,5 @@
 //
-//  TCVTabbarController.h
+//  TCVTabBarController.h
 //  TextCoderViewer
 //
 //  Created by istLZP on 2018/1/10.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TCVTabbarController : UITabBarController
+@interface TCVTabBarController : UITabBarController
 
 @end

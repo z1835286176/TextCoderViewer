@@ -9,10 +9,11 @@
 #import "TCVFileTool.h"
 
 @implementation TCVFileTool
+singleton_implementation(TCVFileTool)
 
-+ (NSString *)getPathInDocumentDirectoryWithComponent:(NSString *)pathName {
++ (NSString *)getPathInDocumentDirectoryWithComponent:(NSString *)pathComponent {
     NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]; //lastObject
-    return pathName.length > 0 ? [documentPath stringByAppendingPathComponent:pathName] : documentPath;
+    return pathComponent.length > 0 ? [documentPath stringByAppendingPathComponent:pathComponent] : documentPath;
 }
 
 /** 检测文件夹是否存在, 不存在自动创建 */
@@ -50,12 +51,7 @@
 
 + (void)getFileListsWithDirectoryName:(NSString *)dirName superPath:(NSString *)superPath CompleteHandler:(void (^)(NSString *, NSArray *))completeHandler {
     // 路径
-    NSString *directoriesPath = @"";
-    if(superPath.length == 0) {
-        directoriesPath = [self getPathInDocumentDirectoryWithComponent:dirName];
-    } else {
-        directoriesPath = [superPath stringByAppendingPathComponent:dirName];
-    }
+    NSString *directoriesPath = [self getPathInDocumentDirectoryWithComponent:superPath];
     
     PPLog(@"%@", directoriesPath);
     
@@ -80,20 +76,22 @@
             continue;
         }
         NSString *filePath = [directoriesPath stringByAppendingPathComponent:name];
-        BOOL isDir = [self checkFileWhetherDirectory:filePath];
+        // BOOL isDir = [self checkFileWhetherDirectory:filePath];
         NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath error:&error];
         // PPLog(@"%@", dictionary);
         
-        TCVFileModel *fileModel = [TCVFileModel fileModelWithName:name IsDirl:isDir];
+        TCVFileModel *fileModel = [[TCVFileModel alloc] init];
+        fileModel.name = name;
         fileModel.superDirName = dirName;
-        fileModel.superDirPath = directoriesPath;
-        fileModel.absolutelyPath = filePath;
+        fileModel.superDirRelativePath = superPath;
+        fileModel.relativePath = [superPath stringByAppendingPathComponent:name];
         fileModel.size = [dictionary fileSize];
         fileModel.modificationDate = [dictionary fileModificationDate]; // 取文件修改时间
+        fileModel.isDir = [[dictionary fileType] isEqualToString:@"NSFileTypeDirectory"];
         
         [resultes addObject:fileModel];
     }
-    completeHandler(directoriesPath, resultes);
+    completeHandler([superPath stringByAppendingString:dirName], resultes);
 }
 
 @end

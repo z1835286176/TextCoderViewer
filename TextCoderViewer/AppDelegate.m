@@ -45,7 +45,7 @@
     TCVNavigationController *settingNav = [[TCVNavigationController alloc] initWithRootViewController:settingVC];
     settingNav.tabBarItem.image = [UIImage imageNamed:@"setting"];
     
-    TCVTabbarController *tabbarCon = [[TCVTabbarController alloc] init];
+    TCVTabBarController *tabbarCon = [[TCVTabBarController alloc] init];
     tabbarCon.viewControllers = @[docuNav, serviceNav, settingNav];
     
     self.window.rootViewController = tabbarCon;

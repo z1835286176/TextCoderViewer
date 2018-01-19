@@ -15,15 +15,28 @@
 #ifdef __OBJC__
 
 #import "TCVNavigationController.h"
-#import "TCVTabbarController.h"
+#import "TCVTabBarController.h"
+
 #import "TCVDocumentViewController.h"
 #import "TCVServiceViewController.h"
 #import "TCVSettingViewController.h"
-#import "TCVAppTool.h"
-#import "TCVFileTool.h"
 
+// 工具
+#import "TCVAccountTool.h"
+#import "TCVAppTool.h"
+#import "TCVDataTool.h"
+#import "TCVFileTool.h"
+#import "TCVHttpTool.h"
+
+// 文件类
 #import "TCVFileModel.h"
 
+#import "TCVServiceSupportedModel.h"
+
+#import "TCVShowDocumentVC.h" // 看文件的VC
+
+// 三方相关
+#import <YYModel/YYModel.h>
 #import "Masonry.h" // 约束
 #import "PPManagers.h" // 自己写的小工具类
 

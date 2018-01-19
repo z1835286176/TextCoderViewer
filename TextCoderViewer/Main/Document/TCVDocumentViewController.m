@@ -31,8 +31,8 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 /** 编辑模式下的被选中数据源 */
 @property (nonatomic, strong) NSMutableArray *linesMSeled;
 
-/** 该层的完整路径, 用于给下层的 superPath 使用 */
-@property (nonatomic, strong) NSString *completePath;
+///** 该层的完整路径, 用于给下层的 superPath 使用 */
+//@property (nonatomic, strong) NSString *completePath;
 
 @property (nonatomic, assign) TCVDocumentConditionStyle documentConditionStyle;
 
@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     }
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [self prepareData];
 }
 
@@ -119,7 +119,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 
     [TCVFileTool getFileListsWithDirectoryName:self.dirName superPath:self.superPath CompleteHandler:^(NSString *completePath, NSArray *results) {
         if(completePath.length > 0) {
-            self.completePath = completePath;
+
         }
         if(results.count > 0) {
             [self.linesM removeAllObjects];
@@ -127,7 +127,6 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
             [self.tableView reloadData];
         }
     }];
-    
 }
 
 - (void)createTableView {
@@ -150,8 +149,8 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
      //    cell.preservesSuperviewLayoutMargins = NO;
      //}
      */
-    [self.tableView setSeparatorInset:UIEdgeInsetsZero];
-    [self.tableView setLayoutMargins:UIEdgeInsetsZero];
+    [tableView setSeparatorInset:UIEdgeInsetsZero];
+    [tableView setLayoutMargins:UIEdgeInsetsZero];
 }
 
 #pragma mark tableView delegate dataSource
@@ -192,11 +191,18 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
         
         // 普通模式
         if(fileModel.isDir) {
+            
             // 如果是文件夹, 跳转到下一页面并显示
             TCVDocumentViewController *documentVC = [[TCVDocumentViewController alloc] init];
             documentVC.dirName = fileModel.name;
-            documentVC.superPath = self.completePath;
+            documentVC.superPath = fileModel.relativePath;
             [self.navigationController pushViewController:documentVC animated:YES];
+        } else {
+            
+            // 文件
+            TCVShowDocumentVC *showDoc = [[TCVShowDocumentVC alloc] init];
+            showDoc.fileModel = fileModel;
+            [self.navigationController pushViewController:showDoc animated:YES];
         }
     } else {
         // 编辑模式
