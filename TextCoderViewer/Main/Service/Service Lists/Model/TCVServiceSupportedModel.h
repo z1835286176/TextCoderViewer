@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, TCVAccountConnectTypes) {
-    TCVAccountConnectTypesFTP,
-    TCVAccountConnectTypesGitHub,
-    TCVAccountConnectTypesBitbucket, // comming soon
-    TCVAccountConnectTypesDropbox, // comming soon
+typedef NS_ENUM(NSInteger, TCVServiceSupportedTypes) {
+    TCVServiceSupportedTypesFTP,
+    TCVServiceSupportedTypesGitHub,
+    TCVServiceSupportedTypesBitbucket, // comming soon
+    TCVServiceSupportedTypesDropbox, // comming soon
+};
+
+typedef NS_ENUM(NSInteger, TCVServiceSupportedReady) {
+    TCVServiceSupportedReadyNO,
+    TCVServiceSupportedReadyYES,
 };
 
 @interface TCVServiceSupportedModel : NSObject
@@ -20,6 +25,8 @@ typedef NS_ENUM(NSInteger, TCVAccountConnectTypes) {
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *displayName;
 @property (nonatomic, strong) NSString *icon;
-@property (nonatomic, assign) int type;
+@property (nonatomic, strong) NSString *nameIcon;
+@property (nonatomic, assign) TCVServiceSupportedTypes type;
+@property (nonatomic, assign) TCVServiceSupportedReady readyStatus;
 
 @end

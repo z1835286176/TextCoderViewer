@@ -79,22 +79,25 @@
         cell = [[TCVServiceSupportedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([TCVServiceSupportedCell class])];
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.serviceSupportedModel = self.supportedServiceList[indexPath.section];
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return 85;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.selectedServiceSModel = self.supportedServiceList[indexPath.section];
+    
+    NSLog(@"select service:%@", self.selectedServiceSModel.name);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 15;
+    return 5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {

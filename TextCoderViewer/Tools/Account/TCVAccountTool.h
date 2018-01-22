@@ -18,6 +18,6 @@
 + (NSArray *)AllAccountConnects;
 
 /** 保存可用的连接列表 */
-+ (BOOL)saveAccountConnect:(NSDictionary *)accountConnect accountConnectType:(TCVAccountConnectTypes)accountConnectType;
++ (BOOL)saveAccountConnect:(NSDictionary *)accountConnect accountConnectType:(TCVServiceSupportedTypes)serviceSupportedType;
 
 @end

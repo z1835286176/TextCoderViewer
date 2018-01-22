@@ -23,6 +23,7 @@
 		0C84931320109A0000EB9518 /* TCVServiceSupportedListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C84931220109A0000EB9518 /* TCVServiceSupportedListVC.m */; };
 		0C84931820109FE400EB9518 /* TCVServiceSupportedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C84931720109FE400EB9518 /* TCVServiceSupportedCell.m */; };
 		0C84931B2010A00600EB9518 /* TCVServiceSupportedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C84931A2010A00600EB9518 /* TCVServiceSupportedModel.m */; };
+		0C8493272011C98000EB9518 /* TCVBackRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8493262011C98000EB9518 /* TCVBackRoundView.m */; };
 		0CCB706B200744EA000C2C6A /* TCVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB706A200744EA000C2C6A /* TCVFileTool.m */; };
 		0CCB7070200749DE000C2C6A /* TCVFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB706F200749DE000C2C6A /* TCVFileModel.m */; };
 		0CCB7073200749FC000C2C6A /* TCVFileListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB7072200749FC000C2C6A /* TCVFileListCell.m */; };
@@ -64,6 +65,8 @@
 		0C84931720109FE400EB9518 /* TCVServiceSupportedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedCell.m; sourceTree = "<group>"; };
 		0C8493192010A00600EB9518 /* TCVServiceSupportedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedModel.h; sourceTree = "<group>"; };
 		0C84931A2010A00600EB9518 /* TCVServiceSupportedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedModel.m; sourceTree = "<group>"; };
+		0C8493252011C98000EB9518 /* TCVBackRoundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVBackRoundView.h; sourceTree = "<group>"; };
+		0C8493262011C98000EB9518 /* TCVBackRoundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVBackRoundView.m; sourceTree = "<group>"; };
 		0CCB7069200744EA000C2C6A /* TCVFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileTool.h; sourceTree = "<group>"; };
 		0CCB706A200744EA000C2C6A /* TCVFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVFileTool.m; sourceTree = "<group>"; };
 		0CCB706E200749DE000C2C6A /* TCVFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileModel.h; sourceTree = "<group>"; };
@@ -298,6 +301,8 @@
 			children = (
 				0C84931620109FE400EB9518 /* TCVServiceSupportedCell.h */,
 				0C84931720109FE400EB9518 /* TCVServiceSupportedCell.m */,
+				0C8493252011C98000EB9518 /* TCVBackRoundView.h */,
+				0C8493262011C98000EB9518 /* TCVBackRoundView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C50E35B200609C2002E9132 /* TCVTabBarController.m in Sources */,
+				0C8493272011C98000EB9518 /* TCVBackRoundView.m in Sources */,
 				0C50E38D20060D95002E9132 /* TCVDocumentViewController.m in Sources */,
 				0C50E35E200609D7002E9132 /* TCVNavigationController.m in Sources */,
 				0C84931820109FE400EB9518 /* TCVServiceSupportedCell.m in Sources */,

@@ -21,35 +21,43 @@
     NSDictionary *ftpDic = @{@"name" : @"FTP",
                              @"displayName" : @"FTP",
                              @"icon" : @"serS_ftp_icon",
-                             @"type" : @(TCVAccountConnectTypesFTP),
+                             @"nameIcon" : @"serS_ftp_text",
+                             @"type" : @(TCVServiceSupportedTypesFTP),
+                             @"readyStatus" : @(TCVServiceSupportedReadyYES),
                              };
     TCVServiceSupportedModel *serviceSModelFTP = [TCVServiceSupportedModel yy_modelWithJSON:ftpDic];
     [serviceSupportedModels addObject:serviceSModelFTP];
 
     // 2. GitHub
     NSDictionary *gitHubDic = @{@"name" : @"GitHub",
-                             @"displayName" : @"GitHub",
-                             @"icon" : @"serS_gitHub_icon",
-                             @"type" : @(TCVAccountConnectTypesGitHub),
-                             };
+                                @"displayName" : @"GitHub",
+                                @"icon" : @"serS_gitHub_icon",
+                                @"nameIcon" : @"serS_gitHub_text",
+                                @"type" : @(TCVServiceSupportedTypesGitHub),
+                                @"readyStatus" : @(TCVServiceSupportedReadyYES),
+                                };
     TCVServiceSupportedModel *serviceSModelGitHub = [TCVServiceSupportedModel yy_modelWithJSON:gitHubDic];
     [serviceSupportedModels addObject:serviceSModelGitHub];
     
     // 3. Bitbucket
     NSDictionary *bitbucketDic = @{@"name" : @"Bitbucket",
-                             @"displayName" : @"Bitbucket",
-                             @"icon" : @"serS_bitbucket_icon",
-                             @"type" : @(TCVAccountConnectTypesBitbucket),
-                             };
+                                   @"displayName" : @"Bitbucket",
+                                   @"icon" : @"serS_bitbucket_icon",
+                                   @"nameIcon" : @"serS_bitbucket_text",
+                                   @"type" : @(TCVServiceSupportedTypesBitbucket),
+                                   @"readyStatus" : @(TCVServiceSupportedReadyNO),
+                                   };
     TCVServiceSupportedModel *serviceSModelBitbucket = [TCVServiceSupportedModel yy_modelWithJSON:bitbucketDic];
     [serviceSupportedModels addObject:serviceSModelBitbucket];
     
     // 4. Dropbox
     NSDictionary *dropboxDic = @{@"name" : @"Dropbox",
-                             @"displayName" : @"Dropbox",
-                             @"icon" : @"serS_dropbox_icon",
-                             @"type" : @(TCVAccountConnectTypesDropbox),
-                             };
+                                 @"displayName" : @"Dropbox",
+                                 @"icon" : @"serS_dropbox_icon",
+                                 @"nameIcon" : @"serS_dropbox_text",
+                                 @"type" : @(TCVServiceSupportedTypesDropbox),
+                                 @"readyStatus" : @(TCVServiceSupportedReadyNO),
+                                 };
     TCVServiceSupportedModel *serviceSModelDropbox = [TCVServiceSupportedModel yy_modelWithJSON:dropboxDic];
     [serviceSupportedModels addObject:serviceSModelDropbox];
 
@@ -66,7 +74,7 @@
 
 #warning 保存连接
 /** 保存可用的连接列表 */
-+ (BOOL)saveAccountConnect:(NSDictionary *)accountConnect accountConnectType:(TCVAccountConnectTypes)accountConnectType {
++ (BOOL)saveAccountConnect:(NSDictionary *)accountConnect accountConnectType:(TCVServiceSupportedTypes)serviceSupportedType {
     
     
     return YES;
