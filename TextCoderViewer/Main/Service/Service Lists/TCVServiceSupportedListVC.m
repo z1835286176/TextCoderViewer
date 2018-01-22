@@ -94,6 +94,7 @@
     self.selectedServiceSModel = self.supportedServiceList[indexPath.section];
     
     NSLog(@"select service:%@", self.selectedServiceSModel.name);
+    [self connectToServiceSupportedWith:self.selectedServiceSModel.type];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -124,5 +125,31 @@
                                        };
         weakself.dismissBlock(selectedInfo);
     }];
+}
+
+#pragma mark different types of service supported
+- (void)connectToServiceSupportedWith:(TCVServiceSupportedTypes)serviceSupportedtype {
+    switch (serviceSupportedtype) {
+        case TCVServiceSupportedTypesFTP: {
+            // 还没想好怎么实现先放着吧
+        }
+            break;
+        case TCVServiceSupportedTypesGitHub: {
+            // 主打github 连接
+            NSString *openString = @"https://github.com/login/oauth/authorize?client_id=8f5397a4797625cc687d&state=0&redirect_uri=https://github.com/LiuZhangpeng/TextCoderViewer";
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[openString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]]]; // 调用safari打开网页
+        }
+            break;
+        case TCVServiceSupportedTypesBitbucket: {
+            
+        }
+            break;
+        case TCVServiceSupportedTypesDropbox: {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 @end

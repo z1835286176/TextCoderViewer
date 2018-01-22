@@ -7,74 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C48465F200DEB6B00FE95A4 /* TCVDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C48465E200DEB6B00FE95A4 /* TCVDataTool.m */; };
-		0C4A8AFD200E01E5009FC3FB /* TCVShowDocumentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A8AFC200E01E5009FC3FB /* TCVShowDocumentVC.m */; };
-		0C50E33A200608AE002E9132 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E339200608AE002E9132 /* AppDelegate.m */; };
-		0C50E342200608AE002E9132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C50E341200608AE002E9132 /* Assets.xcassets */; };
-		0C50E345200608AE002E9132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C50E343200608AE002E9132 /* LaunchScreen.storyboard */; };
-		0C50E348200608AE002E9132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E347200608AE002E9132 /* main.m */; };
-		0C50E35B200609C2002E9132 /* TCVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E35A200609C2002E9132 /* TCVTabBarController.m */; };
-		0C50E35E200609D7002E9132 /* TCVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E35D200609D7002E9132 /* TCVNavigationController.m */; };
-		0C50E36220060A80002E9132 /* TCVAppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E36120060A80002E9132 /* TCVAppTool.m */; };
-		0C50E38D20060D95002E9132 /* TCVDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E38C20060D95002E9132 /* TCVDocumentViewController.m */; };
-		0C50E39020060DA8002E9132 /* TCVServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E38F20060DA8002E9132 /* TCVServiceViewController.m */; };
-		0C50E39320060DB3002E9132 /* TCVSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C50E39220060DB3002E9132 /* TCVSettingViewController.m */; };
-		0C8493072010971200EB9518 /* TCVAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8493062010971200EB9518 /* TCVAccountTool.m */; };
-		0C84931320109A0000EB9518 /* TCVServiceSupportedListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C84931220109A0000EB9518 /* TCVServiceSupportedListVC.m */; };
-		0C84931820109FE400EB9518 /* TCVServiceSupportedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C84931720109FE400EB9518 /* TCVServiceSupportedCell.m */; };
-		0C84931B2010A00600EB9518 /* TCVServiceSupportedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C84931A2010A00600EB9518 /* TCVServiceSupportedModel.m */; };
-		0C8493272011C98000EB9518 /* TCVBackRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8493262011C98000EB9518 /* TCVBackRoundView.m */; };
-		0CCB706B200744EA000C2C6A /* TCVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB706A200744EA000C2C6A /* TCVFileTool.m */; };
-		0CCB7070200749DE000C2C6A /* TCVFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB706F200749DE000C2C6A /* TCVFileModel.m */; };
-		0CCB7073200749FC000C2C6A /* TCVFileListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB7072200749FC000C2C6A /* TCVFileListCell.m */; };
-		0CED6861200F338200762369 /* TCVHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CED6860200F338200762369 /* TCVHttpTool.m */; };
+		0C5662C72015EDF8000C3F74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662872015EDF8000C3F74 /* AppDelegate.m */; };
+		0C5662C82015EDF8000C3F74 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C56628A2015EDF8000C3F74 /* Info.plist */; };
+		0C5662C92015EDF8000C3F74 /* TCVFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56628F2015EDF8000C3F74 /* TCVFileModel.m */; };
+		0C5662CA2015EDF8000C3F74 /* TCVShowDocumentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662922015EDF8000C3F74 /* TCVShowDocumentVC.m */; };
+		0C5662CB2015EDF8000C3F74 /* TCVDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662942015EDF8000C3F74 /* TCVDocumentViewController.m */; };
+		0C5662CC2015EDF8000C3F74 /* TCVFileListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662972015EDF8000C3F74 /* TCVFileListCell.m */; };
+		0C5662CD2015EDF8000C3F74 /* TCVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56629A2015EDF8000C3F74 /* TCVNavigationController.m */; };
+		0C5662CE2015EDF8000C3F74 /* TCVServiceSupportedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56629F2015EDF8000C3F74 /* TCVServiceSupportedModel.m */; };
+		0C5662CF2015EDF8000C3F74 /* TCVServiceSupportedListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662A12015EDF8000C3F74 /* TCVServiceSupportedListVC.m */; };
+		0C5662D02015EDF8000C3F74 /* TCVBackRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662A42015EDF8000C3F74 /* TCVBackRoundView.m */; };
+		0C5662D12015EDF8000C3F74 /* TCVServiceSupportedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662A62015EDF8000C3F74 /* TCVServiceSupportedCell.m */; };
+		0C5662D22015EDF8000C3F74 /* TCVServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662A82015EDF8000C3F74 /* TCVServiceViewController.m */; };
+		0C5662D32015EDF8000C3F74 /* TCVSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662AB2015EDF8000C3F74 /* TCVSettingViewController.m */; };
+		0C5662D42015EDF8000C3F74 /* TCVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662AE2015EDF8000C3F74 /* TCVTabBarController.m */; };
+		0C5662D52015EDF8000C3F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5662B02015EDF8000C3F74 /* Assets.xcassets */; };
+		0C5662D62015EDF8000C3F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5662B12015EDF8000C3F74 /* LaunchScreen.storyboard */; };
+		0C5662D72015EDF8000C3F74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662B32015EDF8000C3F74 /* main.m */; };
+		0C5662D82015EDF8000C3F74 /* TextCoderViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662B52015EDF8000C3F74 /* TextCoderViewer.xcdatamodeld */; };
+		0C5662D92015EDF8000C3F74 /* TCVAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662BA2015EDF8000C3F74 /* TCVAccountTool.m */; };
+		0C5662DA2015EDF8000C3F74 /* TCVAppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662BD2015EDF8000C3F74 /* TCVAppTool.m */; };
+		0C5662DB2015EDF8000C3F74 /* TCVDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662C02015EDF8000C3F74 /* TCVDataTool.m */; };
+		0C5662DC2015EDF8000C3F74 /* TCVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662C32015EDF8000C3F74 /* TCVFileTool.m */; };
+		0C5662DD2015EDF8000C3F74 /* TCVHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5662C62015EDF8000C3F74 /* TCVHttpTool.m */; };
 		48CBEEB95F54C13422AFFBA6 /* libPods-TextCoderViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C48465D200DEB6B00FE95A4 /* TCVDataTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVDataTool.h; sourceTree = "<group>"; };
-		0C48465E200DEB6B00FE95A4 /* TCVDataTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVDataTool.m; sourceTree = "<group>"; };
-		0C4A8AFB200E01E5009FC3FB /* TCVShowDocumentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVShowDocumentVC.h; sourceTree = "<group>"; };
-		0C4A8AFC200E01E5009FC3FB /* TCVShowDocumentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVShowDocumentVC.m; sourceTree = "<group>"; };
 		0C50E335200608AE002E9132 /* TextCoderViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCoderViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C50E338200608AE002E9132 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0C50E339200608AE002E9132 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C50E341200608AE002E9132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C50E344200608AE002E9132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0C50E346200608AE002E9132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C50E347200608AE002E9132 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0C50E359200609C2002E9132 /* TCVTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVTabBarController.h; sourceTree = "<group>"; };
-		0C50E35A200609C2002E9132 /* TCVTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVTabBarController.m; sourceTree = "<group>"; };
-		0C50E35C200609D7002E9132 /* TCVNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVNavigationController.h; sourceTree = "<group>"; };
-		0C50E35D200609D7002E9132 /* TCVNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVNavigationController.m; sourceTree = "<group>"; };
-		0C50E36020060A80002E9132 /* TCVAppTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVAppTool.h; sourceTree = "<group>"; };
-		0C50E36120060A80002E9132 /* TCVAppTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVAppTool.m; sourceTree = "<group>"; };
-		0C50E36320060AB1002E9132 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		0C50E38720060C08002E9132 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		0C50E38B20060D95002E9132 /* TCVDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVDocumentViewController.h; sourceTree = "<group>"; };
-		0C50E38C20060D95002E9132 /* TCVDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVDocumentViewController.m; sourceTree = "<group>"; };
-		0C50E38E20060DA8002E9132 /* TCVServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVServiceViewController.h; sourceTree = "<group>"; };
-		0C50E38F20060DA8002E9132 /* TCVServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVServiceViewController.m; sourceTree = "<group>"; };
-		0C50E39120060DB3002E9132 /* TCVSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVSettingViewController.h; sourceTree = "<group>"; };
-		0C50E39220060DB3002E9132 /* TCVSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVSettingViewController.m; sourceTree = "<group>"; };
-		0C8493052010971200EB9518 /* TCVAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVAccountTool.h; sourceTree = "<group>"; };
-		0C8493062010971200EB9518 /* TCVAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVAccountTool.m; sourceTree = "<group>"; };
-		0C84931120109A0000EB9518 /* TCVServiceSupportedListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedListVC.h; sourceTree = "<group>"; };
-		0C84931220109A0000EB9518 /* TCVServiceSupportedListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedListVC.m; sourceTree = "<group>"; };
-		0C84931620109FE400EB9518 /* TCVServiceSupportedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedCell.h; sourceTree = "<group>"; };
-		0C84931720109FE400EB9518 /* TCVServiceSupportedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedCell.m; sourceTree = "<group>"; };
-		0C8493192010A00600EB9518 /* TCVServiceSupportedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedModel.h; sourceTree = "<group>"; };
-		0C84931A2010A00600EB9518 /* TCVServiceSupportedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedModel.m; sourceTree = "<group>"; };
-		0C8493252011C98000EB9518 /* TCVBackRoundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVBackRoundView.h; sourceTree = "<group>"; };
-		0C8493262011C98000EB9518 /* TCVBackRoundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVBackRoundView.m; sourceTree = "<group>"; };
-		0CCB7069200744EA000C2C6A /* TCVFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileTool.h; sourceTree = "<group>"; };
-		0CCB706A200744EA000C2C6A /* TCVFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVFileTool.m; sourceTree = "<group>"; };
-		0CCB706E200749DE000C2C6A /* TCVFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileModel.h; sourceTree = "<group>"; };
-		0CCB706F200749DE000C2C6A /* TCVFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVFileModel.m; sourceTree = "<group>"; };
-		0CCB7071200749FC000C2C6A /* TCVFileListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVFileListCell.h; sourceTree = "<group>"; };
-		0CCB7072200749FC000C2C6A /* TCVFileListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVFileListCell.m; sourceTree = "<group>"; };
-		0CED685F200F338200762369 /* TCVHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVHttpTool.h; sourceTree = "<group>"; };
-		0CED6860200F338200762369 /* TCVHttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVHttpTool.m; sourceTree = "<group>"; };
+		0C5662862015EDF8000C3F74 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C5662872015EDF8000C3F74 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C5662892015EDF8000C3F74 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0C56628A2015EDF8000C3F74 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C56628E2015EDF8000C3F74 /* TCVFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileModel.h; sourceTree = "<group>"; };
+		0C56628F2015EDF8000C3F74 /* TCVFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileModel.m; sourceTree = "<group>"; };
+		0C5662912015EDF8000C3F74 /* TCVShowDocumentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVShowDocumentVC.h; sourceTree = "<group>"; };
+		0C5662922015EDF8000C3F74 /* TCVShowDocumentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVShowDocumentVC.m; sourceTree = "<group>"; };
+		0C5662932015EDF8000C3F74 /* TCVDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVDocumentViewController.h; sourceTree = "<group>"; };
+		0C5662942015EDF8000C3F74 /* TCVDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVDocumentViewController.m; sourceTree = "<group>"; };
+		0C5662962015EDF8000C3F74 /* TCVFileListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileListCell.h; sourceTree = "<group>"; };
+		0C5662972015EDF8000C3F74 /* TCVFileListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileListCell.m; sourceTree = "<group>"; };
+		0C5662992015EDF8000C3F74 /* TCVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVNavigationController.h; sourceTree = "<group>"; };
+		0C56629A2015EDF8000C3F74 /* TCVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVNavigationController.m; sourceTree = "<group>"; };
+		0C56629E2015EDF8000C3F74 /* TCVServiceSupportedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedModel.h; sourceTree = "<group>"; };
+		0C56629F2015EDF8000C3F74 /* TCVServiceSupportedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedModel.m; sourceTree = "<group>"; };
+		0C5662A02015EDF8000C3F74 /* TCVServiceSupportedListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedListVC.h; sourceTree = "<group>"; };
+		0C5662A12015EDF8000C3F74 /* TCVServiceSupportedListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedListVC.m; sourceTree = "<group>"; };
+		0C5662A32015EDF8000C3F74 /* TCVBackRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVBackRoundView.h; sourceTree = "<group>"; };
+		0C5662A42015EDF8000C3F74 /* TCVBackRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVBackRoundView.m; sourceTree = "<group>"; };
+		0C5662A52015EDF8000C3F74 /* TCVServiceSupportedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedCell.h; sourceTree = "<group>"; };
+		0C5662A62015EDF8000C3F74 /* TCVServiceSupportedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedCell.m; sourceTree = "<group>"; };
+		0C5662A72015EDF8000C3F74 /* TCVServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceViewController.h; sourceTree = "<group>"; };
+		0C5662A82015EDF8000C3F74 /* TCVServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceViewController.m; sourceTree = "<group>"; };
+		0C5662AA2015EDF8000C3F74 /* TCVSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVSettingViewController.h; sourceTree = "<group>"; };
+		0C5662AB2015EDF8000C3F74 /* TCVSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVSettingViewController.m; sourceTree = "<group>"; };
+		0C5662AD2015EDF8000C3F74 /* TCVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVTabBarController.h; sourceTree = "<group>"; };
+		0C5662AE2015EDF8000C3F74 /* TCVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVTabBarController.m; sourceTree = "<group>"; };
+		0C5662B02015EDF8000C3F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C5662B22015EDF8000C3F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C5662B32015EDF8000C3F74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C5662B42015EDF8000C3F74 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0C5662B62015EDF8000C3F74 /* TextCoderViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextCoderViewer.xcdatamodel; sourceTree = "<group>"; };
+		0C5662B92015EDF8000C3F74 /* TCVAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAccountTool.h; sourceTree = "<group>"; };
+		0C5662BA2015EDF8000C3F74 /* TCVAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccountTool.m; sourceTree = "<group>"; };
+		0C5662BC2015EDF8000C3F74 /* TCVAppTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAppTool.h; sourceTree = "<group>"; };
+		0C5662BD2015EDF8000C3F74 /* TCVAppTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAppTool.m; sourceTree = "<group>"; };
+		0C5662BF2015EDF8000C3F74 /* TCVDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVDataTool.h; sourceTree = "<group>"; };
+		0C5662C02015EDF8000C3F74 /* TCVDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVDataTool.m; sourceTree = "<group>"; };
+		0C5662C22015EDF8000C3F74 /* TCVFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileTool.h; sourceTree = "<group>"; };
+		0C5662C32015EDF8000C3F74 /* TCVFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileTool.m; sourceTree = "<group>"; };
+		0C5662C52015EDF8000C3F74 /* TCVHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVHttpTool.h; sourceTree = "<group>"; };
+		0C5662C62015EDF8000C3F74 /* TCVHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVHttpTool.m; sourceTree = "<group>"; };
 		1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextCoderViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABB0AF2980A0AD0E1AE844D /* Pods-TextCoderViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.release.xcconfig"; sourceTree = "<group>"; };
 		D5967FA60635AD2C52AEB969 /* Pods-TextCoderViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,19 +95,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C4A8AFA200E01C9009FC3FB /* ShowDocument */ = {
-			isa = PBXGroup;
-			children = (
-				0C4A8AFB200E01E5009FC3FB /* TCVShowDocumentVC.h */,
-				0C4A8AFC200E01E5009FC3FB /* TCVShowDocumentVC.m */,
-			);
-			path = ShowDocument;
-			sourceTree = "<group>";
-		};
 		0C50E32C200608AE002E9132 = {
 			isa = PBXGroup;
 			children = (
-				0C50E337200608AE002E9132 /* TextCoderViewer */,
+				0C5662852015EDF8000C3F74 /* TextCoderViewer */,
 				0C50E336200608AE002E9132 /* Products */,
 				A63C486CBCF5ED1AD4BC27E1 /* Pods */,
 				929CD03211A02E456C33357C /* Frameworks */,
@@ -119,228 +113,214 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C50E337200608AE002E9132 /* TextCoderViewer */ = {
+		0C5662852015EDF8000C3F74 /* TextCoderViewer */ = {
 			isa = PBXGroup;
 			children = (
-				0C50E3552006096A002E9132 /* Tools */,
-				0C50E35220060934002E9132 /* Categories */,
-				0C50E35320060934002E9132 /* Libraries */,
-				0C50E34F20060934002E9132 /* Main */,
-				0C50E34E200608DB002E9132 /* OtherFile */,
-				0C50E338200608AE002E9132 /* AppDelegate.h */,
-				0C50E339200608AE002E9132 /* AppDelegate.m */,
-				0C50E346200608AE002E9132 /* Info.plist */,
-				0C50E38720060C08002E9132 /* PrefixHeader.pch */,
+				0C5662862015EDF8000C3F74 /* AppDelegate.h */,
+				0C5662872015EDF8000C3F74 /* AppDelegate.m */,
+				0C5662882015EDF8000C3F74 /* Categories */,
+				0C56628A2015EDF8000C3F74 /* Info.plist */,
+				0C56628B2015EDF8000C3F74 /* Main */,
+				0C5662AF2015EDF8000C3F74 /* OtherFile */,
+				0C5662B42015EDF8000C3F74 /* PrefixHeader.pch */,
+				0C5662B52015EDF8000C3F74 /* TextCoderViewer.xcdatamodeld */,
+				0C5662B72015EDF8000C3F74 /* Tools */,
 			);
 			path = TextCoderViewer;
 			sourceTree = "<group>";
 		};
-		0C50E34E200608DB002E9132 /* OtherFile */ = {
+		0C5662882015EDF8000C3F74 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				0C50E341200608AE002E9132 /* Assets.xcassets */,
-				0C50E343200608AE002E9132 /* LaunchScreen.storyboard */,
-				0C50E347200608AE002E9132 /* main.m */,
-			);
-			path = OtherFile;
-			sourceTree = "<group>";
-		};
-		0C50E34F20060934002E9132 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				0C50E38820060D52002E9132 /* Document */,
-				0C50E38A20060D53002E9132 /* Service */,
-				0C50E38920060D52002E9132 /* Setting */,
-				0C50E35020060934002E9132 /* Navigation */,
-				0C50E35120060934002E9132 /* Tabbar */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		0C50E35020060934002E9132 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				0C50E35C200609D7002E9132 /* TCVNavigationController.h */,
-				0C50E35D200609D7002E9132 /* TCVNavigationController.m */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		0C50E35120060934002E9132 /* Tabbar */ = {
-			isa = PBXGroup;
-			children = (
-				0C50E359200609C2002E9132 /* TCVTabBarController.h */,
-				0C50E35A200609C2002E9132 /* TCVTabBarController.m */,
-			);
-			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		0C50E35220060934002E9132 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				0C50E36320060AB1002E9132 /* Singleton.h */,
+				0C5662892015EDF8000C3F74 /* Singleton.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		0C50E35320060934002E9132 /* Libraries */ = {
+		0C56628B2015EDF8000C3F74 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0C56628C2015EDF8000C3F74 /* Document */,
+				0C5662982015EDF8000C3F74 /* Navigation */,
+				0C56629B2015EDF8000C3F74 /* Service */,
+				0C5662A92015EDF8000C3F74 /* Setting */,
+				0C5662AC2015EDF8000C3F74 /* Tabbar */,
 			);
-			path = Libraries;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		0C50E3552006096A002E9132 /* Tools */ = {
+		0C56628C2015EDF8000C3F74 /* Document */ = {
 			isa = PBXGroup;
 			children = (
-				0C8493032010970000EB9518 /* Account */,
-				0C50E35F20060A6C002E9132 /* App */,
-				0C50E35720060993002E9132 /* Data */,
-				0CCB7068200744D7000C2C6A /* File */,
-				0C50E35820060993002E9132 /* Download */,
-				0C50E35620060993002E9132 /* Http */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		0C50E35620060993002E9132 /* Http */ = {
-			isa = PBXGroup;
-			children = (
-				0CED685F200F338200762369 /* TCVHttpTool.h */,
-				0CED6860200F338200762369 /* TCVHttpTool.m */,
-			);
-			path = Http;
-			sourceTree = "<group>";
-		};
-		0C50E35720060993002E9132 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				0C48465D200DEB6B00FE95A4 /* TCVDataTool.h */,
-				0C48465E200DEB6B00FE95A4 /* TCVDataTool.m */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		0C50E35820060993002E9132 /* Download */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Download;
-			sourceTree = "<group>";
-		};
-		0C50E35F20060A6C002E9132 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				0C50E36020060A80002E9132 /* TCVAppTool.h */,
-				0C50E36120060A80002E9132 /* TCVAppTool.m */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		0C50E38820060D52002E9132 /* Document */ = {
-			isa = PBXGroup;
-			children = (
-				0C4A8AFA200E01C9009FC3FB /* ShowDocument */,
-				0CCB706D200745F1000C2C6A /* Model */,
-				0CCB706C200745F1000C2C6A /* View */,
-				0C50E38B20060D95002E9132 /* TCVDocumentViewController.h */,
-				0C50E38C20060D95002E9132 /* TCVDocumentViewController.m */,
+				0C56628D2015EDF8000C3F74 /* Model */,
+				0C5662902015EDF8000C3F74 /* ShowDocument */,
+				0C5662932015EDF8000C3F74 /* TCVDocumentViewController.h */,
+				0C5662942015EDF8000C3F74 /* TCVDocumentViewController.m */,
+				0C5662952015EDF8000C3F74 /* View */,
 			);
 			path = Document;
 			sourceTree = "<group>";
 		};
-		0C50E38920060D52002E9132 /* Setting */ = {
+		0C56628D2015EDF8000C3F74 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0C50E39120060DB3002E9132 /* TCVSettingViewController.h */,
-				0C50E39220060DB3002E9132 /* TCVSettingViewController.m */,
+				0C56628E2015EDF8000C3F74 /* TCVFileModel.h */,
+				0C56628F2015EDF8000C3F74 /* TCVFileModel.m */,
 			);
-			path = Setting;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		0C50E38A20060D53002E9132 /* Service */ = {
+		0C5662902015EDF8000C3F74 /* ShowDocument */ = {
 			isa = PBXGroup;
 			children = (
-				0C849310201099C200EB9518 /* Service Lists */,
-				0C50E38E20060DA8002E9132 /* TCVServiceViewController.h */,
-				0C50E38F20060DA8002E9132 /* TCVServiceViewController.m */,
+				0C5662912015EDF8000C3F74 /* TCVShowDocumentVC.h */,
+				0C5662922015EDF8000C3F74 /* TCVShowDocumentVC.m */,
+			);
+			path = ShowDocument;
+			sourceTree = "<group>";
+		};
+		0C5662952015EDF8000C3F74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662962015EDF8000C3F74 /* TCVFileListCell.h */,
+				0C5662972015EDF8000C3F74 /* TCVFileListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C5662982015EDF8000C3F74 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662992015EDF8000C3F74 /* TCVNavigationController.h */,
+				0C56629A2015EDF8000C3F74 /* TCVNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0C56629B2015EDF8000C3F74 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C56629C2015EDF8000C3F74 /* Service Lists */,
+				0C5662A72015EDF8000C3F74 /* TCVServiceViewController.h */,
+				0C5662A82015EDF8000C3F74 /* TCVServiceViewController.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		0C8493032010970000EB9518 /* Account */ = {
+		0C56629C2015EDF8000C3F74 /* Service Lists */ = {
 			isa = PBXGroup;
 			children = (
-				0C8493042010970000EB9518 /* Accounts */,
-				0C8493052010971200EB9518 /* TCVAccountTool.h */,
-				0C8493062010971200EB9518 /* TCVAccountTool.m */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		0C8493042010970000EB9518 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
-		0C849310201099C200EB9518 /* Service Lists */ = {
-			isa = PBXGroup;
-			children = (
-				0C84931520109FCC00EB9518 /* Model */,
-				0C84931420109FCC00EB9518 /* View */,
-				0C84931120109A0000EB9518 /* TCVServiceSupportedListVC.h */,
-				0C84931220109A0000EB9518 /* TCVServiceSupportedListVC.m */,
+				0C56629D2015EDF8000C3F74 /* Model */,
+				0C5662A02015EDF8000C3F74 /* TCVServiceSupportedListVC.h */,
+				0C5662A12015EDF8000C3F74 /* TCVServiceSupportedListVC.m */,
+				0C5662A22015EDF8000C3F74 /* View */,
 			);
 			path = "Service Lists";
 			sourceTree = "<group>";
 		};
-		0C84931420109FCC00EB9518 /* View */ = {
+		0C56629D2015EDF8000C3F74 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0C84931620109FE400EB9518 /* TCVServiceSupportedCell.h */,
-				0C84931720109FE400EB9518 /* TCVServiceSupportedCell.m */,
-				0C8493252011C98000EB9518 /* TCVBackRoundView.h */,
-				0C8493262011C98000EB9518 /* TCVBackRoundView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0C84931520109FCC00EB9518 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0C8493192010A00600EB9518 /* TCVServiceSupportedModel.h */,
-				0C84931A2010A00600EB9518 /* TCVServiceSupportedModel.m */,
+				0C56629E2015EDF8000C3F74 /* TCVServiceSupportedModel.h */,
+				0C56629F2015EDF8000C3F74 /* TCVServiceSupportedModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0CCB7068200744D7000C2C6A /* File */ = {
+		0C5662A22015EDF8000C3F74 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0CCB7069200744EA000C2C6A /* TCVFileTool.h */,
-				0CCB706A200744EA000C2C6A /* TCVFileTool.m */,
+				0C5662A32015EDF8000C3F74 /* TCVBackRoundView.h */,
+				0C5662A42015EDF8000C3F74 /* TCVBackRoundView.m */,
+				0C5662A52015EDF8000C3F74 /* TCVServiceSupportedCell.h */,
+				0C5662A62015EDF8000C3F74 /* TCVServiceSupportedCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C5662A92015EDF8000C3F74 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662AA2015EDF8000C3F74 /* TCVSettingViewController.h */,
+				0C5662AB2015EDF8000C3F74 /* TCVSettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0C5662AC2015EDF8000C3F74 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662AD2015EDF8000C3F74 /* TCVTabBarController.h */,
+				0C5662AE2015EDF8000C3F74 /* TCVTabBarController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		0C5662AF2015EDF8000C3F74 /* OtherFile */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662B02015EDF8000C3F74 /* Assets.xcassets */,
+				0C5662B12015EDF8000C3F74 /* LaunchScreen.storyboard */,
+				0C5662B32015EDF8000C3F74 /* main.m */,
+			);
+			path = OtherFile;
+			sourceTree = "<group>";
+		};
+		0C5662B72015EDF8000C3F74 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662B82015EDF8000C3F74 /* Account */,
+				0C5662BB2015EDF8000C3F74 /* App */,
+				0C5662BE2015EDF8000C3F74 /* Data */,
+				0C5662C12015EDF8000C3F74 /* File */,
+				0C5662C42015EDF8000C3F74 /* Http */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0C5662B82015EDF8000C3F74 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662B92015EDF8000C3F74 /* TCVAccountTool.h */,
+				0C5662BA2015EDF8000C3F74 /* TCVAccountTool.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		0C5662BB2015EDF8000C3F74 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662BC2015EDF8000C3F74 /* TCVAppTool.h */,
+				0C5662BD2015EDF8000C3F74 /* TCVAppTool.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0C5662BE2015EDF8000C3F74 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662BF2015EDF8000C3F74 /* TCVDataTool.h */,
+				0C5662C02015EDF8000C3F74 /* TCVDataTool.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0C5662C12015EDF8000C3F74 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				0C5662C22015EDF8000C3F74 /* TCVFileTool.h */,
+				0C5662C32015EDF8000C3F74 /* TCVFileTool.m */,
 			);
 			path = File;
 			sourceTree = "<group>";
 		};
-		0CCB706C200745F1000C2C6A /* View */ = {
+		0C5662C42015EDF8000C3F74 /* Http */ = {
 			isa = PBXGroup;
 			children = (
-				0CCB7071200749FC000C2C6A /* TCVFileListCell.h */,
-				0CCB7072200749FC000C2C6A /* TCVFileListCell.m */,
+				0C5662C52015EDF8000C3F74 /* TCVHttpTool.h */,
+				0C5662C62015EDF8000C3F74 /* TCVHttpTool.m */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0CCB706D200745F1000C2C6A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0CCB706E200749DE000C2C6A /* TCVFileModel.h */,
-				0CCB706F200749DE000C2C6A /* TCVFileModel.m */,
-			);
-			path = Model;
+			path = Http;
 			sourceTree = "<group>";
 		};
 		929CD03211A02E456C33357C /* Frameworks */ = {
@@ -422,8 +402,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C50E345200608AE002E9132 /* LaunchScreen.storyboard in Resources */,
-				0C50E342200608AE002E9132 /* Assets.xcassets in Resources */,
+				0C5662D62015EDF8000C3F74 /* LaunchScreen.storyboard in Resources */,
+				0C5662D52015EDF8000C3F74 /* Assets.xcassets in Resources */,
+				0C5662C82015EDF8000C3F74 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,35 +466,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C50E35B200609C2002E9132 /* TCVTabBarController.m in Sources */,
-				0C8493272011C98000EB9518 /* TCVBackRoundView.m in Sources */,
-				0C50E38D20060D95002E9132 /* TCVDocumentViewController.m in Sources */,
-				0C50E35E200609D7002E9132 /* TCVNavigationController.m in Sources */,
-				0C84931820109FE400EB9518 /* TCVServiceSupportedCell.m in Sources */,
-				0C8493072010971200EB9518 /* TCVAccountTool.m in Sources */,
-				0C4A8AFD200E01E5009FC3FB /* TCVShowDocumentVC.m in Sources */,
-				0C50E348200608AE002E9132 /* main.m in Sources */,
-				0C50E33A200608AE002E9132 /* AppDelegate.m in Sources */,
-				0C50E36220060A80002E9132 /* TCVAppTool.m in Sources */,
-				0CCB706B200744EA000C2C6A /* TCVFileTool.m in Sources */,
-				0C84931B2010A00600EB9518 /* TCVServiceSupportedModel.m in Sources */,
-				0CCB7070200749DE000C2C6A /* TCVFileModel.m in Sources */,
-				0C48465F200DEB6B00FE95A4 /* TCVDataTool.m in Sources */,
-				0C50E39020060DA8002E9132 /* TCVServiceViewController.m in Sources */,
-				0CCB7073200749FC000C2C6A /* TCVFileListCell.m in Sources */,
-				0C50E39320060DB3002E9132 /* TCVSettingViewController.m in Sources */,
-				0CED6861200F338200762369 /* TCVHttpTool.m in Sources */,
-				0C84931320109A0000EB9518 /* TCVServiceSupportedListVC.m in Sources */,
+				0C5662CC2015EDF8000C3F74 /* TCVFileListCell.m in Sources */,
+				0C5662D42015EDF8000C3F74 /* TCVTabBarController.m in Sources */,
+				0C5662C72015EDF8000C3F74 /* AppDelegate.m in Sources */,
+				0C5662DA2015EDF8000C3F74 /* TCVAppTool.m in Sources */,
+				0C5662D92015EDF8000C3F74 /* TCVAccountTool.m in Sources */,
+				0C5662D22015EDF8000C3F74 /* TCVServiceViewController.m in Sources */,
+				0C5662D12015EDF8000C3F74 /* TCVServiceSupportedCell.m in Sources */,
+				0C5662DC2015EDF8000C3F74 /* TCVFileTool.m in Sources */,
+				0C5662CB2015EDF8000C3F74 /* TCVDocumentViewController.m in Sources */,
+				0C5662CA2015EDF8000C3F74 /* TCVShowDocumentVC.m in Sources */,
+				0C5662D02015EDF8000C3F74 /* TCVBackRoundView.m in Sources */,
+				0C5662D32015EDF8000C3F74 /* TCVSettingViewController.m in Sources */,
+				0C5662DB2015EDF8000C3F74 /* TCVDataTool.m in Sources */,
+				0C5662C92015EDF8000C3F74 /* TCVFileModel.m in Sources */,
+				0C5662CD2015EDF8000C3F74 /* TCVNavigationController.m in Sources */,
+				0C5662D82015EDF8000C3F74 /* TextCoderViewer.xcdatamodeld in Sources */,
+				0C5662CE2015EDF8000C3F74 /* TCVServiceSupportedModel.m in Sources */,
+				0C5662D72015EDF8000C3F74 /* main.m in Sources */,
+				0C5662CF2015EDF8000C3F74 /* TCVServiceSupportedListVC.m in Sources */,
+				0C5662DD2015EDF8000C3F74 /* TCVHttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C50E343200608AE002E9132 /* LaunchScreen.storyboard */ = {
+		0C5662B12015EDF8000C3F74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0C50E344200608AE002E9132 /* Base */,
+				0C5662B22015EDF8000C3F74 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -679,6 +661,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0C5662B52015EDF8000C3F74 /* TextCoderViewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0C5662B62015EDF8000C3F74 /* TextCoderViewer.xcdatamodel */,
+			);
+			currentVersion = 0C5662B62015EDF8000C3F74 /* TextCoderViewer.xcdatamodel */;
+			path = TextCoderViewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0C50E32D200608AE002E9132 /* Project object */;
 }

@@ -14,8 +14,7 @@
 @property (nonatomic, strong) UIView *roundBackView;
 
 @property (nonatomic, strong) UIImageView *iconImageView;
-// 此处应该用艺术字表示最好, 但是不方便, 先用label显示文字
-#warning name 后期直接改成图片, label显示不出那种效果
+
 @property (nonatomic, strong) UIImageView *nameImageView;
 
 /** comming soon */
