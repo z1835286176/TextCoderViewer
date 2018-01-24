@@ -136,7 +136,7 @@
             break;
         case TCVServiceSupportedTypesGitHub: {
             // 主打github 连接
-            NSString *openString = @"https://github.com/login/oauth/authorize?client_id=8f5397a4797625cc687d&state=0&redirect_uri=https://github.com/LiuZhangpeng/TextCoderViewer";
+            NSString *openString = @"https://github.com/login/oauth/authorize?client_id=8f5397a4797625cc687d&state=0&redirect_uri=textcoderviewer://";
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[openString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]]]; // 调用safari打开网页
         }
             break;

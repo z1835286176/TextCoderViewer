@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, TCVServiceSupportedReady) {
     TCVServiceSupportedReadyYES,
 };
 
+/** 这个只是本项目支持的服务, 暂时只有四个 */
 @interface TCVServiceSupportedModel : NSObject
 
 @property (nonatomic, strong) NSString *name;

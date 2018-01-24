@@ -8,6 +8,9 @@
 
 #import "TCVServiceViewController.h"
 #import "TCVServiceSupportedListVC.h"
+#import "TCVServiceListCell.h"
+
+#import "TCVGitHubViewController.h"
 
 @interface TCVServiceViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -38,11 +41,29 @@
     return _addMoreItem;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    // [self prepareData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"服务";
     [self setUpRightBarButtonItem];
     [self createTableView];
+    [self prepareData];
+    
+    [self myGitHub];
+}
+
+/** 伪造一个数据 */
+- (void)myGitHub {
+    TCVAccountOfGithub *gitHubAccount = [[TCVAccountOfGithub alloc] initWithServiceSupportedType:TCVServiceSupportedTypesGitHub];
+    gitHubAccount.headIcon = @"icon_github_head";
+    gitHubAccount.userName = @"LiuZhangpeng";
+    [self.linesM addObject:gitHubAccount];
+    
+    NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:self.linesM.count - 1 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationTop];
 }
 
 - (void)setUpRightBarButtonItem {
@@ -72,6 +93,17 @@
     [tableView setLayoutMargins:UIEdgeInsetsZero];
 }
 
+- (void)prepareData {
+    
+    NSArray *accountConnects = [TCVAccountTool AllAccountConnects];
+    
+    if(accountConnects.count > 0) {
+        [self.linesM removeAllObjects];
+        [self.linesM addObjectsFromArray:accountConnects];
+        [self.tableView reloadData];
+    }
+}
+
 #pragma mark tableView delegate dataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -82,10 +114,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    TCVServiceListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TCVServiceListCell class])];
     if(nil == cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[TCVServiceListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([TCVServiceListCell class])];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
+    
+    cell.account = self.linesM[indexPath.row];
     return cell;
 }
 
@@ -95,6 +130,32 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    TCVAccount *account = self.linesM[indexPath.row];
+    switch (account.serviceSupportedType) {
+        case TCVServiceSupportedTypesFTP: {
+            
+        }
+            break;
+        case TCVServiceSupportedTypesGitHub: {
+            TCVAccountOfGithub *gitHubAccount =(TCVAccountOfGithub *)account;
+            // 跳转到github的功能页面
+            TCVGitHubViewController *viewController = [[TCVGitHubViewController alloc] init];
+            viewController.account = gitHubAccount;
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+            break;
+        case TCVServiceSupportedTypesBitbucket: {
+            
+        }
+            break;
+        case TCVServiceSupportedTypesDropbox: {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark barButtonItem action

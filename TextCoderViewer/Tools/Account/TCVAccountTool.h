@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "TCVServiceSupportedModel.h"
+#import "TCVAccount.h"
+
+#import "TCVAccountOfGithub.h"
 
 @interface TCVAccountTool : NSObject
 
@@ -15,7 +18,7 @@
 + (NSArray *)AllServiceSupportedLists;
 
 /** 所有已经保存的连接列表 */
-+ (NSArray *)AllAccountConnects;
++ (NSArray<TCVAccount *> *)AllAccountConnects;
 
 /** 保存可用的连接列表 */
 + (BOOL)saveAccountConnect:(NSDictionary *)accountConnect accountConnectType:(TCVServiceSupportedTypes)serviceSupportedType;

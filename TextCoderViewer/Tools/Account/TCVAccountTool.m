@@ -66,7 +66,7 @@
 
 #warning 获取所有的用户或连接
 /** 所有已经保存的连接列表 */
-+ (NSArray *)AllAccountConnects {
++ (NSArray<TCVAccount *> *)AllAccountConnects {
     
     
     return @[];
