@@ -28,6 +28,8 @@
 #import "TCVFileTool.h"
 #import "TCVHttpTool.h"
 
+#import "TCVGitHubApiSDK.h"
+
 // 文件类
 #import "TCVFileModel.h"
 

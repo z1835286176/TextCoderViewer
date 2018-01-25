@@ -34,7 +34,8 @@
 		0C9C363020181D0300B8F567 /* TCVServiceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C362F20181D0300B8F567 /* TCVServiceListCell.m */; };
 		0C9C363820182BC000B8F567 /* TCVAccountOfGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C363620182BC000B8F567 /* TCVAccountOfGithub.m */; };
 		0C9C363B20182C0000B8F567 /* TCVGitHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C363A20182C0000B8F567 /* TCVGitHubViewController.m */; };
-		0C9C366620188A5100B8F567 /* TCVGitHubSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C366520188A5100B8F567 /* TCVGitHubSearchController.m */; };
+		0C9C366A2019CAD900B8F567 /* TCVGitHubApiSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C36692019CAD900B8F567 /* TCVGitHubApiSDK.m */; };
+		0C9C366E2019D89400B8F567 /* TCVGitHubSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C366D2019D89400B8F567 /* TCVGitHubSearchController.m */; };
 		48CBEEB95F54C13422AFFBA6 /* libPods-TextCoderViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */; };
 /* End PBXBuildFile section */
 
@@ -91,8 +92,10 @@
 		0C9C363620182BC000B8F567 /* TCVAccountOfGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccountOfGithub.m; sourceTree = "<group>"; };
 		0C9C363920182C0000B8F567 /* TCVGitHubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVGitHubViewController.h; sourceTree = "<group>"; };
 		0C9C363A20182C0000B8F567 /* TCVGitHubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubViewController.m; sourceTree = "<group>"; };
-		0C9C366420188A5100B8F567 /* TCVGitHubSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVGitHubSearchController.h; sourceTree = "<group>"; };
-		0C9C366520188A5100B8F567 /* TCVGitHubSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubSearchController.m; sourceTree = "<group>"; };
+		0C9C36682019CAD900B8F567 /* TCVGitHubApiSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVGitHubApiSDK.h; sourceTree = "<group>"; };
+		0C9C36692019CAD900B8F567 /* TCVGitHubApiSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubApiSDK.m; sourceTree = "<group>"; };
+		0C9C366C2019D89400B8F567 /* TCVGitHubSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubSearchController.h; sourceTree = "<group>"; };
+		0C9C366D2019D89400B8F567 /* TCVGitHubSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubSearchController.m; sourceTree = "<group>"; };
 		1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextCoderViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABB0AF2980A0AD0E1AE844D /* Pods-TextCoderViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.release.xcconfig"; sourceTree = "<group>"; };
 		D5967FA60635AD2C52AEB969 /* Pods-TextCoderViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -338,6 +341,7 @@
 		0C5662C42015EDF8000C3F74 /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				0C9C36672019CA8B00B8F567 /* GitHubApi */,
 				0C5662C52015EDF8000C3F74 /* TCVHttpTool.h */,
 				0C5662C62015EDF8000C3F74 /* TCVHttpTool.m */,
 			);
@@ -382,8 +386,7 @@
 				0C9C363420182BC000B8F567 /* Model */,
 				0C9C363920182C0000B8F567 /* TCVGitHubViewController.h */,
 				0C9C363A20182C0000B8F567 /* TCVGitHubViewController.m */,
-				0C9C366420188A5100B8F567 /* TCVGitHubSearchController.h */,
-				0C9C366520188A5100B8F567 /* TCVGitHubSearchController.m */,
+				0C9C366B2019D89400B8F567 /* Search */,
 			);
 			path = GitHub;
 			sourceTree = "<group>";
@@ -402,6 +405,24 @@
 			children = (
 			);
 			path = Dropbox;
+			sourceTree = "<group>";
+		};
+		0C9C36672019CA8B00B8F567 /* GitHubApi */ = {
+			isa = PBXGroup;
+			children = (
+				0C9C36682019CAD900B8F567 /* TCVGitHubApiSDK.h */,
+				0C9C36692019CAD900B8F567 /* TCVGitHubApiSDK.m */,
+			);
+			path = GitHubApi;
+			sourceTree = "<group>";
+		};
+		0C9C366B2019D89400B8F567 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0C9C366C2019D89400B8F567 /* TCVGitHubSearchController.h */,
+				0C9C366D2019D89400B8F567 /* TCVGitHubSearchController.m */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		929CD03211A02E456C33357C /* Frameworks */ = {
@@ -563,11 +584,12 @@
 				0C5662D32015EDF8000C3F74 /* TCVSettingViewController.m in Sources */,
 				0C5662DB2015EDF8000C3F74 /* TCVDataTool.m in Sources */,
 				0C5662C92015EDF8000C3F74 /* TCVFileModel.m in Sources */,
+				0C9C366E2019D89400B8F567 /* TCVGitHubSearchController.m in Sources */,
+				0C9C366A2019CAD900B8F567 /* TCVGitHubApiSDK.m in Sources */,
 				0C5662CD2015EDF8000C3F74 /* TCVNavigationController.m in Sources */,
 				0C5662D82015EDF8000C3F74 /* TextCoderViewer.xcdatamodeld in Sources */,
 				0C5662CE2015EDF8000C3F74 /* TCVServiceSupportedModel.m in Sources */,
 				0C9C363B20182C0000B8F567 /* TCVGitHubViewController.m in Sources */,
-				0C9C366620188A5100B8F567 /* TCVGitHubSearchController.m in Sources */,
 				0C9C363820182BC000B8F567 /* TCVAccountOfGithub.m in Sources */,
 				0C5662D72015EDF8000C3F74 /* main.m in Sources */,
 				0C5662CF2015EDF8000C3F74 /* TCVServiceSupportedListVC.m in Sources */,

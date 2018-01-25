@@ -9,15 +9,15 @@
 #import "TCVGitHubViewController.h"
 #import "TCVGitHubSearchController.h"
 
-@interface TCVGitHubViewController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
+@interface TCVGitHubViewController () <UITableViewDelegate, UITableViewDataSource, TCVGitHubSearchControllerDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
-/** searchController */
-@property (nonatomic, strong) UISearchController *searchController;
-
+/** 点击searchBar之后, 设置searchController为当前控制器的子控制器 */
+//@property (nonatomic, strong) TCVGitHubSearchController *searchController;
 /** 点击searchBar之后, 整个searchBar就依附在这个view上面 */
 @property (nonatomic, strong) UIView *wholeView;
+
 @end
 
 @implementation TCVGitHubViewController
@@ -117,37 +117,7 @@
     switch (indexPath.section) {
         case 0: {
             // search
-            [self.navigationController setNavigationBarHidden:YES animated:YES];
-            
-            // 弹出一个View
-            UIView *wholeView = [[UIView alloc] initWithFrame:self.view.bounds];
-            [wholeView setBackgroundColor:[UIColor whiteColor]];
-            [self.view addSubview:wholeView];
-            self.wholeView = wholeView;
-            
-            UIColor *backColor = [UIColor colorWithWholeRed:249 green:249 blue:249];
-            UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 70)];
-            [backView setBackgroundColor:backColor];
-            [wholeView addSubview:backView];
-            
-            UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 23, self.view.frame.size.width, 40)];//
-            searchBar.placeholder = @"搜索 GitHub";
-            searchBar.showsCancelButton = YES;
-            searchBar.barTintColor = backColor;
-            searchBar.delegate = self;
-            for (UIView *subView in searchBar.subviews) {
-                if ([subView isKindOfClass:[UIView  class]]) {
-                    [[subView.subviews objectAtIndex:0] removeFromSuperview];
-                }
-            }
-            [backView addSubview:searchBar];
-            
-            UIButton *cancleBtn = [searchBar valueForKey:@"_cancelButton"];
-            [cancleBtn setTintColor:[UIColor colorWithWholeRed:49 green:126 blue:244]];
-            [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
-            cancleBtn.enabled = YES;
-            
-            [searchBar becomeFirstResponder];
+            [self showSearchInputView];
         }
             break;
         case 1: {
@@ -179,11 +149,36 @@
     return 44;
 }
 
-#pragma mark UISearchBarDelegate
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+#pragma mark search bar click
+- (void)showSearchInputView {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    // 创建控制器
+    TCVGitHubSearchController *searchController = [[TCVGitHubSearchController alloc] initWithParentController:self];
+    searchController.delegate = self;
+    // self.searchController = searchController;
+    
+    // 添加view
+    [searchController.view setFrame:self.view.bounds];
+    self.wholeView = searchController.view;
+    [self.view addSubview:searchController.view];
+    
+    [searchController.searchBar becomeFirstResponder];
+}
+
+#pragma mark TCVGitHubSearchControllerDelegate
+
+- (void)willDismissSearchController:(TCVGitHubSearchController *)searchController {
     [self.wholeView removeFromSuperview];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.wholeView = nil;
+}
+
+- (void)didDismissSearchController:(TCVGitHubSearchController *)searchController {
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)begainToOnSearchController:(TCVGitHubSearchController *)searchController {
+    
 }
 
 @end
