@@ -43,6 +43,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     // [self prepareData];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)viewDidLoad {

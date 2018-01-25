@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 
 
-@interface AppDelegate ()
+@interface AppDelegate () <UITabBarControllerDelegate>
+
+@property (nonatomic, assign) NSInteger lastSelected;
 
 @end
 
@@ -46,6 +48,8 @@
     settingNav.tabBarItem.image = [UIImage imageNamed:@"setting"];
     
     TCVTabBarController *tabbarCon = [[TCVTabBarController alloc] init];
+    tabbarCon.delegate = self;
+    self.lastSelected = 0;
     tabbarCon.viewControllers = @[docuNav, serviceNav, settingNav];
     
     self.window.rootViewController = tabbarCon;
@@ -78,5 +82,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+#pragma make UITabBarControllerDelegate
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+
+}
 
 @end
