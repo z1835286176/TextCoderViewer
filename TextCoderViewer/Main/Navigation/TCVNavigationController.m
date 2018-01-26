@@ -18,12 +18,14 @@
     if(self == [TCVNavigationController class]) {
         
         UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+        navBar.tintColor = SystemStyleColorInThisApp();
         navBar.barTintColor = [UIColor whiteColor];
         navBar.backgroundColor = [UIColor whiteColor];
         
         NSMutableDictionary *attribute = [NSMutableDictionary dictionary];
         attribute[NSFontAttributeName] = UIFontWithBoldSize(16);
         [navBar setTitleTextAttributes:attribute];
+        
     }
 }
 

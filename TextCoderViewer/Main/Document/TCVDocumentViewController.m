@@ -24,6 +24,9 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 @property (nonatomic, strong) UIBarButtonItem *addMoreItem;
 /** 编辑按钮 */
 @property (nonatomic, strong) UIBarButtonItem *editItem;
+/** 完成按钮 */
+/** 编辑按钮 */
+@property (nonatomic, strong) UIBarButtonItem *completeItem;
 
 /** 数据源 */
 @property (nonatomic, strong) NSMutableArray *linesM;
@@ -64,9 +67,18 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 
 - (UIBarButtonItem *)editItem {
     if(nil == _editItem) {
-        _editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(editAllCells)];
+        _editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(editAllCells)];
+        // UIBarButtonItemStylePlain
+        // UIBarButtonItemStyleDone 会加粗字体
     }
     return _editItem;
+}
+
+- (UIBarButtonItem *)completeItem {
+    if(nil == _completeItem) {
+        _completeItem = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(editAllCells)];
+    }
+    return _completeItem;
 }
 
 - (NSMutableArray *)linesM {
@@ -111,7 +123,7 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
 }
 
 - (void)setUpRightBarButtonItems {
-    self.navigationItem.rightBarButtonItems = self.documentConditionStyle == TCVDocumentConditionStyleNormal ? @[self.editItem, self.addMoreItem] : @[self.editItem];
+    self.navigationItem.rightBarButtonItems = self.documentConditionStyle == TCVDocumentConditionStyleNormal ? @[self.editItem, self.addMoreItem] : @[self.completeItem];
 }
 
 
@@ -244,10 +256,14 @@ typedef NS_ENUM(NSInteger, TCVDocumentConditionStyle) {
     // 保守起见, 设置一遍self.documentConditionStyle = TCVDocumentConditionStyleEditing
     self.documentConditionStyle = editing ? TCVDocumentConditionStyleEditing : TCVDocumentConditionStyleNormal;
     
+    self.navigationItem.hidesBackButton = editing;
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = !editing;
+    }
+    
     [self setUpRightBarButtonItems];
     
     self.tabBarController.tabBar.hidden = editing;
-    self.editItem.title = editing ? @"完成" : @"编辑";
     NSInteger count = self.linesM.count;
     for(NSInteger index = 0; index < count; index ++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];

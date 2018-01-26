@@ -33,19 +33,19 @@
     TCVDocumentViewController *documentVC = [[TCVDocumentViewController alloc] init];
     documentVC.title = @"文档";
     TCVNavigationController *docuNav = [[TCVNavigationController alloc] initWithRootViewController:documentVC];
-    docuNav.tabBarItem.image = [UIImage imageNamed:@"file_box"];
+    docuNav.tabBarItem.image = [UIImage imageNamed:@"AllMyFiles"];
     
     // 服务
     TCVServiceViewController *serviceVC = [[TCVServiceViewController alloc] init];
     serviceVC.title = @"服务";
     TCVNavigationController *serviceNav = [[TCVNavigationController alloc] initWithRootViewController:serviceVC];
-    serviceNav.tabBarItem.image = [UIImage imageNamed:@"cloud"];
+    serviceNav.tabBarItem.image = [UIImage imageNamed:@"Cloud"];
     
     // 设置
     TCVSettingViewController *settingVC = [[TCVSettingViewController alloc] init];
     settingVC.title = @"设置";
     TCVNavigationController *settingNav = [[TCVNavigationController alloc] initWithRootViewController:settingVC];
-    settingNav.tabBarItem.image = [UIImage imageNamed:@"setting"];
+    settingNav.tabBarItem.image = [UIImage imageNamed:@"Settings"];
     
     TCVTabBarController *tabbarCon = [[TCVTabBarController alloc] init];
     tabbarCon.delegate = self;

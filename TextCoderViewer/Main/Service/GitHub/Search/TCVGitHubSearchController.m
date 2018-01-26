@@ -7,6 +7,7 @@
 //
 
 #import "TCVGitHubSearchController.h"
+#import "TCVGitHubRepositoriesCell.h"
 
 @interface TCVGitHubSearchController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 
@@ -28,14 +29,16 @@
         
         [self.view addSubview:tableView];
         _tableView = tableView;
+        
+        tableView.tableFooterView = [[UIView alloc] init];
     }
     return _tableView;
 }
 
 - (UIActivityIndicatorView *)indicatorView {
     if(nil == _indicatorView) {
-        UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-        [indicatorView setCenter:CGPointMake(0.5 * self.view.frame.size.width, 35 + 0.5 * self.view.frame.size.width)];
+        UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        [indicatorView setCenter:CGPointMake(0.5 * self.view.frame.size.width, 35 + 0.5 * self.view.frame.size.height)];
         
         [self.view addSubview:indicatorView];
         _indicatorView = indicatorView;
@@ -65,7 +68,7 @@
 
 - (void)setUpTopView {
 
-    UIColor *backColor = [UIColor colorWithWholeRed:249 green:249 blue:249];
+    UIColor *backColor = [UIColor colorWithWholeRed:245 green:245 blue:245];
     UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 69.6)];
     [backView setBackgroundColor:backColor];
     [self.view addSubview:backView];
@@ -91,6 +94,10 @@
     [cancleBtn setTintColor:[UIColor colorWithWholeRed:49 green:126 blue:244]];
     [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
     cancleBtn.enabled = YES;
+    
+    UITextField *textField = [_searchBar valueForKey:@"_searchField"];
+    [textField setBackgroundColor:[UIColor colorWithWholeRed:231 green:231 blue:233]];
+    
 }
 
 #pragma mark tableView delegate, dataSource
@@ -103,12 +110,15 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    TCVGitHubRepositoriesCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TCVGitHubRepositoriesCell class])];
     if(nil == cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[TCVGitHubRepositoriesCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([TCVGitHubRepositoriesCell class])];
     }
-    cell.textLabel.text = self.resultsMArray[indexPath.row][@"full_name"];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
 }
 
 #pragma mark UISearchBarDelegate
@@ -132,6 +142,7 @@
     NSString *searchContent = searchBar.text;
     if(searchContent.length > 0) {
         // 只有文字长度大于0 才可以搜索
+        [searchBar resignFirstResponder];
         
         // 只要开始搜索, tableview的数据就要隐藏
         self.tableView.hidden = YES;
@@ -147,6 +158,7 @@
             // 查到数据之后
             self.tableView.hidden = NO;
             self.indicatorView.hidden = YES;
+            [self.indicatorView stopAnimating];
             
             [self.resultsMArray removeAllObjects];
             
@@ -156,7 +168,8 @@
             
             [self.tableView reloadData];
         } fail:^(NSError *error) {
-            
+            self.indicatorView.hidden = YES;
+            [self.indicatorView stopAnimating];
         }];
         
     } else {
@@ -170,5 +183,6 @@
         self.indicatorView.hidden = YES;
     }
 }
+
 
 @end
