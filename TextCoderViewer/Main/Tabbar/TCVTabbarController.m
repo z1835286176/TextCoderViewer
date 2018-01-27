@@ -20,16 +20,9 @@
         
         // 更改该项目中使用到的tabbar
         UITabBar *tabBar = [UITabBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+        tabBar.tintColor = SystemStyleColorInThisApp();
         tabBar.barTintColor = [UIColor whiteColor];
         tabBar.backgroundColor = [UIColor whiteColor];
-        
-        UITabBarItem *tabBarItem = [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[self]];
-        
-        // 普通字体
-        NSMutableDictionary *attributeNormal = [NSMutableDictionary dictionary];
-        attributeNormal[NSForegroundColorAttributeName] = [UIColor grayColor];
-        [tabBarItem setTitleTextAttributes:attributeNormal forState:UIControlStateNormal];
-
     }
 }
 

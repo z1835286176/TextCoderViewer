@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C9342EB201B2D1300663244 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C934293201B2D1300663244 /* AppDelegate.m */; };
-		0C9342EC201B2D1300663244 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C934296201B2D1300663244 /* Info.plist */; };
 		0C9342ED201B2D1300663244 /* TCVFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93429B201B2D1300663244 /* TCVFileModel.m */; };
 		0C9342EE201B2D1300663244 /* TCVShowDocumentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93429E201B2D1300663244 /* TCVShowDocumentVC.m */; };
 		0C9342EF201B2D1300663244 /* TCVDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342A0201B2D1300663244 /* TCVDocumentViewController.m */; };
@@ -508,7 +507,6 @@
 			files = (
 				0C934300201B2D1300663244 /* LaunchScreen.storyboard in Resources */,
 				0C9342FF201B2D1300663244 /* Assets.xcassets in Resources */,
-				0C9342EC201B2D1300663244 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +726,7 @@
 				DEVELOPMENT_TEAM = E7W6597ZYH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TextCoderViewer/PrefixHeader.pch";
 				INFOPLIST_FILE = TextCoderViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lzp.TextCoderViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -744,6 +743,7 @@
 				DEVELOPMENT_TEAM = E7W6597ZYH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TextCoderViewer/PrefixHeader.pch";
 				INFOPLIST_FILE = TextCoderViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lzp.TextCoderViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
