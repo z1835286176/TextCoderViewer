@@ -134,6 +134,43 @@ UIImage *UIImageOriginalWithImageName(NSString *imageName) {
 #pragma mark category DIYView of UIView
 @implementation UIView (DIYView)
 
+/**
+ 圆角半径 RRcornerRadius;
+ 边框宽度 RRborderWith;
+ 边框颜色 RRborderColor;
+ */
+- (void)setRoundRect:(CGFloat)cornerRadius borderWith:(CGFloat)borderWith borderColor:(UIColor *)borderColor {
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.borderWidth = borderWith;
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)setRoundRect:(CGFloat)cornerRadius borderWith:(CGFloat)borderWith borderCGColor:(CGColorRef)borderColor {
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.borderWidth = borderWith;
+    self.layer.borderColor = borderColor;
+    self.layer.masksToBounds = YES;
+}
+
+- (void)setRoundRect:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor {
+    [self setRoundRect:cornerRadius borderWith:1 borderColor:borderColor];
+}
+- (void)setRoundRectBorderColor:(UIColor *)borderColor {
+    [self setRoundRect:5 borderWith:1 borderColor:borderColor];
+}
+- (void)setRoundRect:(CGFloat)cornerRadius {
+    [self setRoundRect:cornerRadius borderWith:1 borderColor:[UIColor grayColor]];
+}
+- (void)setRoundRectBorderWith:(CGFloat)borderWith {
+    [self setRoundRect:5 borderWith:borderWith borderColor:[UIColor grayColor]];
+}
+
+- (void)setDefaultRounRect {
+    
+    [self setRoundRect:5 borderWith:1 borderColor:[UIColor grayColor]];
+}
+
 + (void)drawRectContentViewCorner:(UIView *)cellContentView cornerStyle:(UIRectCorner)style {
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:cellContentView.bounds byRoundingCorners:style cornerRadii:CGSizeMake(5.0, 5.0)];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];

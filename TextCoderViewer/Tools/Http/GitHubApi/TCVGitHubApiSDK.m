@@ -10,6 +10,7 @@
 
 @implementation TCVGitHubApiSDK
 
+/** 查询项目 */
 NSString *GitHubApi_Search_repositories(void) {
     return @"https://api.github.com/search/repositories";
 }
@@ -19,7 +20,13 @@ NSString *GitHubApi_Search_repositories(void) {
         NSDictionary *resultDic = result;
         if(resultDic.count > 0) {
             NSArray *resultArray = resultDic[@"items"];
-            success(resultArray);
+            
+            NSMutableArray *repositories = [NSMutableArray array];
+            for(NSDictionary *dataDic in resultArray) {
+                TCVGitHubRepositoriesModel *repositoriesModel = [TCVGitHubRepositoriesModel yy_modelWithJSON:dataDic];
+                [repositories addObject:repositoriesModel];
+            }
+            success([repositories copy]);
         }
     } failure:^(NSError *error) {
         fail(error);

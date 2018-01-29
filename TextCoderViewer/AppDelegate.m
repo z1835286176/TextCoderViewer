@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TCVGitHubSearchController.h"
 
 @interface AppDelegate () <UITabBarControllerDelegate>
 
@@ -25,6 +25,7 @@
     [self showMainController];
     
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 
@@ -52,6 +53,11 @@
     self.lastSelected = 0;
     tabbarCon.viewControllers = @[docuNav, serviceNav, settingNav];
     
+//
+//    TCVGitHubSearchController *searchController = [[TCVGitHubSearchController alloc] init];
+//
+//    self.window.rootViewController = searchController;
+//
     self.window.rootViewController = tabbarCon;
 }
 

@@ -79,6 +79,20 @@ UIImage * _Nullable UIImageOriginalWithImageName(NSString * _Nullable imageName)
 #pragma mark category DIYView of UIView
 @interface UIView (DIYView)
 
+/**
+ 圆角半径 RRcornerRadius;
+ 边框宽度 RRborderWith;
+ 边框颜色 RRborderColor;
+ */
+
+- (void)setRoundRect:(CGFloat)cornerRadius borderWith:(CGFloat)borderWith borderColor:(UIColor *_Nonnull)borderColor;
+- (void)setRoundRect:(CGFloat)cornerRadius borderWith:(CGFloat)borderWith borderCGColor:(CGColorRef _Nonnull )borderColor;
+- (void)setRoundRect:(CGFloat)cornerRadius borderColor:(UIColor *_Nonnull)borderColor;
+- (void)setRoundRectBorderColor:(UIColor *_Nonnull)borderColor;
+- (void)setRoundRect:(CGFloat)cornerRadius;
+- (void)setRoundRectBorderWith:(CGFloat)borderWith;
+- (void)setDefaultRounRect;
+
 + (void)drawRectContentViewCorner:(UIView *_Nonnull)cellContentView cornerStyle:(UIRectCorner)style;
 
 + (void)drawRectContentViewBottomCorner:(UIView *_Nonnull)contentView dataArray:(NSArray *_Nonnull)array indexPath:(NSIndexPath *_Nonnull)indexPath;
@@ -106,10 +120,10 @@ CGPoint relativeCenterBySuperFrame(CGRect superFrame);
 #pragma mark category DIYLabel of UILabel
 @interface UILabel (DIYLabel)
 /** 根据宽度计算文字的高度 */
-+(CGFloat)textHeightWithString:(NSString *)string andFont:(UIFont *)fontsize andwidth:(CGFloat)numsize;
++ (CGFloat)textHeightWithString:(NSString *_Nonnull)string andFont:(UIFont *_Nonnull)fontsize andwidth:(CGFloat)numsize;
 
 /** 根据高度计算文字的宽度 */
-+(CGFloat)textWidthWithString:(NSString *)string andFont:(UIFont *)fontsize andHight:(CGFloat)numsize;
++ (CGFloat)textWidthWithString:(NSString *_Nonnull)string andFont:(UIFont *_Nonnull)fontsize andHight:(CGFloat)numsize;
 
 @end
 

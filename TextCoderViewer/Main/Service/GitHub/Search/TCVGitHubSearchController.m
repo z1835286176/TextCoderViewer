@@ -64,6 +64,7 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setUpTopView];
+
 }
 
 - (void)setUpTopView {
@@ -93,7 +94,6 @@
     UIButton *cancleBtn = [_searchBar valueForKey:@"_cancelButton"];
     [cancleBtn setTintColor:[UIColor colorWithWholeRed:49 green:126 blue:244]];
     [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
-    cancleBtn.enabled = YES;
     
     UITextField *textField = [_searchBar valueForKey:@"_searchField"];
     [textField setBackgroundColor:[UIColor colorWithWholeRed:231 green:231 blue:233]];
@@ -113,12 +113,16 @@
     TCVGitHubRepositoriesCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TCVGitHubRepositoriesCell class])];
     if(nil == cell) {
         cell = [[TCVGitHubRepositoriesCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([TCVGitHubRepositoriesCell class])];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
+    
+    TCVGitHubRepositoriesModel *model = self.resultsMArray[indexPath.row];
+    cell.repositoriesModel = model;
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return 80;
 }
 
 #pragma mark UISearchBarDelegate
@@ -135,9 +139,9 @@
     }
 }
 
+// 键盘的搜索按钮
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-    // 键盘的搜索按钮
-    
+
     // 获取当前输入的文字
     NSString *searchContent = searchBar.text;
     if(searchContent.length > 0) {

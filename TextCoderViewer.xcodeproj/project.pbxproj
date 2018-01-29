@@ -7,100 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C9342EB201B2D1300663244 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C934293201B2D1300663244 /* AppDelegate.m */; };
-		0C9342ED201B2D1300663244 /* TCVFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93429B201B2D1300663244 /* TCVFileModel.m */; };
-		0C9342EE201B2D1300663244 /* TCVShowDocumentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C93429E201B2D1300663244 /* TCVShowDocumentVC.m */; };
-		0C9342EF201B2D1300663244 /* TCVDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342A0201B2D1300663244 /* TCVDocumentViewController.m */; };
-		0C9342F0201B2D1300663244 /* TCVFileListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342A3201B2D1300663244 /* TCVFileListCell.m */; };
-		0C9342F1201B2D1300663244 /* TCVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342A6201B2D1300663244 /* TCVNavigationController.m */; };
-		0C9342F2201B2D1300663244 /* TCVAccountOfGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342AB201B2D1300663244 /* TCVAccountOfGithub.m */; };
-		0C9342F3201B2D1300663244 /* TCVGitHubRepositoriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342AF201B2D1300663244 /* TCVGitHubRepositoriesModel.m */; };
-		0C9342F4201B2D1300663244 /* TCVGitHubSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342B1201B2D1300663244 /* TCVGitHubSearchController.m */; };
-		0C9342F5201B2D1300663244 /* TCVGitHubRepositoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342B4201B2D1300663244 /* TCVGitHubRepositoriesCell.m */; };
-		0C9342F6201B2D1300663244 /* TCVGitHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342B6201B2D1300663244 /* TCVGitHubViewController.m */; };
-		0C9342F7201B2D1300663244 /* TCVServiceSupportedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342BA201B2D1300663244 /* TCVServiceSupportedModel.m */; };
-		0C9342F8201B2D1300663244 /* TCVServiceSupportedListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342BC201B2D1300663244 /* TCVServiceSupportedListVC.m */; };
-		0C9342F9201B2D1300663244 /* TCVBackRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342BF201B2D1300663244 /* TCVBackRoundView.m */; };
-		0C9342FA201B2D1300663244 /* TCVServiceSupportedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342C1201B2D1300663244 /* TCVServiceSupportedCell.m */; };
-		0C9342FB201B2D1300663244 /* TCVServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342C3201B2D1300663244 /* TCVServiceViewController.m */; };
-		0C9342FC201B2D1300663244 /* TCVServiceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342C6201B2D1300663244 /* TCVServiceListCell.m */; };
-		0C9342FD201B2D1300663244 /* TCVSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342C9201B2D1300663244 /* TCVSettingViewController.m */; };
-		0C9342FE201B2D1300663244 /* TCVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342CC201B2D1300663244 /* TCVTabBarController.m */; };
-		0C9342FF201B2D1300663244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9342CE201B2D1300663244 /* Assets.xcassets */; };
-		0C934300201B2D1300663244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9342CF201B2D1300663244 /* LaunchScreen.storyboard */; };
-		0C934301201B2D1300663244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342D1201B2D1300663244 /* main.m */; };
-		0C934302201B2D1300663244 /* TextCoderViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342D3201B2D1300663244 /* TextCoderViewer.xcdatamodeld */; };
-		0C934303201B2D1300663244 /* TCVAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342D9201B2D1300663244 /* TCVAccount.m */; };
-		0C934304201B2D1300663244 /* TCVAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342DB201B2D1300663244 /* TCVAccountTool.m */; };
-		0C934305201B2D1300663244 /* TCVAppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342DE201B2D1300663244 /* TCVAppTool.m */; };
-		0C934306201B2D1300663244 /* TCVDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342E1201B2D1300663244 /* TCVDataTool.m */; };
-		0C934307201B2D1300663244 /* TCVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342E4201B2D1300663244 /* TCVFileTool.m */; };
-		0C934308201B2D1300663244 /* TCVGitHubApiSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342E8201B2D1300663244 /* TCVGitHubApiSDK.m */; };
-		0C934309201B2D1300663244 /* TCVHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9342EA201B2D1300663244 /* TCVHttpTool.m */; };
+		0C5817C2201F11D300B63BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581766201F11D300B63BBA /* AppDelegate.m */; };
+		0C5817C3201F11D300B63BBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C581769201F11D300B63BBA /* Info.plist */; };
+		0C5817C4201F11D300B63BBA /* TCVFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58176E201F11D300B63BBA /* TCVFileModel.m */; };
+		0C5817C5201F11D300B63BBA /* TCVShowDocumentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581771201F11D300B63BBA /* TCVShowDocumentVC.m */; };
+		0C5817C6201F11D300B63BBA /* TCVDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581773201F11D300B63BBA /* TCVDocumentViewController.m */; };
+		0C5817C7201F11D300B63BBA /* TCVFileListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581776201F11D300B63BBA /* TCVFileListCell.m */; };
+		0C5817C8201F11D300B63BBA /* TCVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581779201F11D300B63BBA /* TCVNavigationController.m */; };
+		0C5817C9201F11D300B63BBA /* TCVAccountOfGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58177F201F11D300B63BBA /* TCVAccountOfGithub.m */; };
+		0C5817CA201F11D300B63BBA /* TCVGitHubLicenseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581782201F11D300B63BBA /* TCVGitHubLicenseModel.m */; };
+		0C5817CB201F11D300B63BBA /* TCVGitHubRepositoriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581785201F11D300B63BBA /* TCVGitHubRepositoriesModel.m */; };
+		0C5817CC201F11D300B63BBA /* TCVGitHubSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581788201F11D300B63BBA /* TCVGitHubSearchController.m */; };
+		0C5817CD201F11D300B63BBA /* TCVGitHubRepositoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58178B201F11D300B63BBA /* TCVGitHubRepositoriesCell.m */; };
+		0C5817CE201F11D300B63BBA /* TCVGitHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58178D201F11D300B63BBA /* TCVGitHubViewController.m */; };
+		0C5817CF201F11D300B63BBA /* TCVServiceSupportedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581791201F11D300B63BBA /* TCVServiceSupportedModel.m */; };
+		0C5817D0201F11D300B63BBA /* TCVServiceSupportedListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581793201F11D300B63BBA /* TCVServiceSupportedListVC.m */; };
+		0C5817D1201F11D400B63BBA /* TCVBackRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581796201F11D300B63BBA /* TCVBackRoundView.m */; };
+		0C5817D2201F11D400B63BBA /* TCVServiceSupportedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581798201F11D300B63BBA /* TCVServiceSupportedCell.m */; };
+		0C5817D3201F11D400B63BBA /* TCVServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58179A201F11D300B63BBA /* TCVServiceViewController.m */; };
+		0C5817D4201F11D400B63BBA /* TCVServiceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58179D201F11D300B63BBA /* TCVServiceListCell.m */; };
+		0C5817D5201F11D400B63BBA /* TCVSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817A0201F11D300B63BBA /* TCVSettingViewController.m */; };
+		0C5817D6201F11D400B63BBA /* TCVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817A3201F11D300B63BBA /* TCVTabBarController.m */; };
+		0C5817D7201F11D400B63BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5817A5201F11D300B63BBA /* Assets.xcassets */; };
+		0C5817D8201F11D400B63BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5817A6201F11D300B63BBA /* LaunchScreen.storyboard */; };
+		0C5817D9201F11D400B63BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817A8201F11D300B63BBA /* main.m */; };
+		0C5817DA201F11D400B63BBA /* TextCoderViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817AA201F11D300B63BBA /* TextCoderViewer.xcdatamodeld */; };
+		0C5817DB201F11D400B63BBA /* TCVAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817B0201F11D300B63BBA /* TCVAccount.m */; };
+		0C5817DC201F11D400B63BBA /* TCVAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817B2201F11D300B63BBA /* TCVAccountTool.m */; };
+		0C5817DD201F11D400B63BBA /* TCVAppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817B5201F11D300B63BBA /* TCVAppTool.m */; };
+		0C5817DE201F11D400B63BBA /* TCVDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817B8201F11D300B63BBA /* TCVDataTool.m */; };
+		0C5817DF201F11D400B63BBA /* TCVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817BB201F11D300B63BBA /* TCVFileTool.m */; };
+		0C5817E0201F11D400B63BBA /* TCVGitHubApiSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817BF201F11D300B63BBA /* TCVGitHubApiSDK.m */; };
+		0C5817E1201F11D400B63BBA /* TCVHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817C1201F11D300B63BBA /* TCVHttpTool.m */; };
 		48CBEEB95F54C13422AFFBA6 /* libPods-TextCoderViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C50E335200608AE002E9132 /* TextCoderViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCoderViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C934292201B2D1300663244 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0C934293201B2D1300663244 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C934295201B2D1300663244 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		0C934296201B2D1300663244 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C93429A201B2D1300663244 /* TCVFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileModel.h; sourceTree = "<group>"; };
-		0C93429B201B2D1300663244 /* TCVFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileModel.m; sourceTree = "<group>"; };
-		0C93429D201B2D1300663244 /* TCVShowDocumentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVShowDocumentVC.h; sourceTree = "<group>"; };
-		0C93429E201B2D1300663244 /* TCVShowDocumentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVShowDocumentVC.m; sourceTree = "<group>"; };
-		0C93429F201B2D1300663244 /* TCVDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVDocumentViewController.h; sourceTree = "<group>"; };
-		0C9342A0201B2D1300663244 /* TCVDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVDocumentViewController.m; sourceTree = "<group>"; };
-		0C9342A2201B2D1300663244 /* TCVFileListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileListCell.h; sourceTree = "<group>"; };
-		0C9342A3201B2D1300663244 /* TCVFileListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileListCell.m; sourceTree = "<group>"; };
-		0C9342A5201B2D1300663244 /* TCVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVNavigationController.h; sourceTree = "<group>"; };
-		0C9342A6201B2D1300663244 /* TCVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVNavigationController.m; sourceTree = "<group>"; };
-		0C9342AA201B2D1300663244 /* TCVAccountOfGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAccountOfGithub.h; sourceTree = "<group>"; };
-		0C9342AB201B2D1300663244 /* TCVAccountOfGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccountOfGithub.m; sourceTree = "<group>"; };
-		0C9342AE201B2D1300663244 /* TCVGitHubRepositoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesModel.h; sourceTree = "<group>"; };
-		0C9342AF201B2D1300663244 /* TCVGitHubRepositoriesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesModel.m; sourceTree = "<group>"; };
-		0C9342B0201B2D1300663244 /* TCVGitHubSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubSearchController.h; sourceTree = "<group>"; };
-		0C9342B1201B2D1300663244 /* TCVGitHubSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubSearchController.m; sourceTree = "<group>"; };
-		0C9342B3201B2D1300663244 /* TCVGitHubRepositoriesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesCell.h; sourceTree = "<group>"; };
-		0C9342B4201B2D1300663244 /* TCVGitHubRepositoriesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesCell.m; sourceTree = "<group>"; };
-		0C9342B5201B2D1300663244 /* TCVGitHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubViewController.h; sourceTree = "<group>"; };
-		0C9342B6201B2D1300663244 /* TCVGitHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubViewController.m; sourceTree = "<group>"; };
-		0C9342B9201B2D1300663244 /* TCVServiceSupportedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedModel.h; sourceTree = "<group>"; };
-		0C9342BA201B2D1300663244 /* TCVServiceSupportedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedModel.m; sourceTree = "<group>"; };
-		0C9342BB201B2D1300663244 /* TCVServiceSupportedListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedListVC.h; sourceTree = "<group>"; };
-		0C9342BC201B2D1300663244 /* TCVServiceSupportedListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedListVC.m; sourceTree = "<group>"; };
-		0C9342BE201B2D1300663244 /* TCVBackRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVBackRoundView.h; sourceTree = "<group>"; };
-		0C9342BF201B2D1300663244 /* TCVBackRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVBackRoundView.m; sourceTree = "<group>"; };
-		0C9342C0201B2D1300663244 /* TCVServiceSupportedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedCell.h; sourceTree = "<group>"; };
-		0C9342C1201B2D1300663244 /* TCVServiceSupportedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedCell.m; sourceTree = "<group>"; };
-		0C9342C2201B2D1300663244 /* TCVServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceViewController.h; sourceTree = "<group>"; };
-		0C9342C3201B2D1300663244 /* TCVServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceViewController.m; sourceTree = "<group>"; };
-		0C9342C5201B2D1300663244 /* TCVServiceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceListCell.h; sourceTree = "<group>"; };
-		0C9342C6201B2D1300663244 /* TCVServiceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceListCell.m; sourceTree = "<group>"; };
-		0C9342C8201B2D1300663244 /* TCVSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVSettingViewController.h; sourceTree = "<group>"; };
-		0C9342C9201B2D1300663244 /* TCVSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVSettingViewController.m; sourceTree = "<group>"; };
-		0C9342CB201B2D1300663244 /* TCVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVTabBarController.h; sourceTree = "<group>"; };
-		0C9342CC201B2D1300663244 /* TCVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVTabBarController.m; sourceTree = "<group>"; };
-		0C9342CE201B2D1300663244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C9342D0201B2D1300663244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0C9342D1201B2D1300663244 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0C9342D2201B2D1300663244 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		0C9342D4201B2D1300663244 /* TextCoderViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextCoderViewer.xcdatamodel; sourceTree = "<group>"; };
-		0C9342D8201B2D1300663244 /* TCVAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAccount.h; sourceTree = "<group>"; };
-		0C9342D9201B2D1300663244 /* TCVAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccount.m; sourceTree = "<group>"; };
-		0C9342DA201B2D1300663244 /* TCVAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAccountTool.h; sourceTree = "<group>"; };
-		0C9342DB201B2D1300663244 /* TCVAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccountTool.m; sourceTree = "<group>"; };
-		0C9342DD201B2D1300663244 /* TCVAppTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAppTool.h; sourceTree = "<group>"; };
-		0C9342DE201B2D1300663244 /* TCVAppTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAppTool.m; sourceTree = "<group>"; };
-		0C9342E0201B2D1300663244 /* TCVDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVDataTool.h; sourceTree = "<group>"; };
-		0C9342E1201B2D1300663244 /* TCVDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVDataTool.m; sourceTree = "<group>"; };
-		0C9342E3201B2D1300663244 /* TCVFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileTool.h; sourceTree = "<group>"; };
-		0C9342E4201B2D1300663244 /* TCVFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileTool.m; sourceTree = "<group>"; };
-		0C9342E7201B2D1300663244 /* TCVGitHubApiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubApiSDK.h; sourceTree = "<group>"; };
-		0C9342E8201B2D1300663244 /* TCVGitHubApiSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubApiSDK.m; sourceTree = "<group>"; };
-		0C9342E9201B2D1300663244 /* TCVHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVHttpTool.h; sourceTree = "<group>"; };
-		0C9342EA201B2D1300663244 /* TCVHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVHttpTool.m; sourceTree = "<group>"; };
+		0C581765201F11D300B63BBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C581766201F11D300B63BBA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C581768201F11D300B63BBA /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0C581769201F11D300B63BBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C58176D201F11D300B63BBA /* TCVFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileModel.h; sourceTree = "<group>"; };
+		0C58176E201F11D300B63BBA /* TCVFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileModel.m; sourceTree = "<group>"; };
+		0C581770201F11D300B63BBA /* TCVShowDocumentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVShowDocumentVC.h; sourceTree = "<group>"; };
+		0C581771201F11D300B63BBA /* TCVShowDocumentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVShowDocumentVC.m; sourceTree = "<group>"; };
+		0C581772201F11D300B63BBA /* TCVDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVDocumentViewController.h; sourceTree = "<group>"; };
+		0C581773201F11D300B63BBA /* TCVDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVDocumentViewController.m; sourceTree = "<group>"; };
+		0C581775201F11D300B63BBA /* TCVFileListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileListCell.h; sourceTree = "<group>"; };
+		0C581776201F11D300B63BBA /* TCVFileListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileListCell.m; sourceTree = "<group>"; };
+		0C581778201F11D300B63BBA /* TCVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVNavigationController.h; sourceTree = "<group>"; };
+		0C581779201F11D300B63BBA /* TCVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVNavigationController.m; sourceTree = "<group>"; };
+		0C58177E201F11D300B63BBA /* TCVAccountOfGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAccountOfGithub.h; sourceTree = "<group>"; };
+		0C58177F201F11D300B63BBA /* TCVAccountOfGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccountOfGithub.m; sourceTree = "<group>"; };
+		0C581781201F11D300B63BBA /* TCVGitHubLicenseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubLicenseModel.h; sourceTree = "<group>"; };
+		0C581782201F11D300B63BBA /* TCVGitHubLicenseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubLicenseModel.m; sourceTree = "<group>"; };
+		0C581784201F11D300B63BBA /* TCVGitHubRepositoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesModel.h; sourceTree = "<group>"; };
+		0C581785201F11D300B63BBA /* TCVGitHubRepositoriesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesModel.m; sourceTree = "<group>"; };
+		0C581787201F11D300B63BBA /* TCVGitHubSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubSearchController.h; sourceTree = "<group>"; };
+		0C581788201F11D300B63BBA /* TCVGitHubSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubSearchController.m; sourceTree = "<group>"; };
+		0C58178A201F11D300B63BBA /* TCVGitHubRepositoriesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesCell.h; sourceTree = "<group>"; };
+		0C58178B201F11D300B63BBA /* TCVGitHubRepositoriesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesCell.m; sourceTree = "<group>"; };
+		0C58178C201F11D300B63BBA /* TCVGitHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubViewController.h; sourceTree = "<group>"; };
+		0C58178D201F11D300B63BBA /* TCVGitHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubViewController.m; sourceTree = "<group>"; };
+		0C581790201F11D300B63BBA /* TCVServiceSupportedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedModel.h; sourceTree = "<group>"; };
+		0C581791201F11D300B63BBA /* TCVServiceSupportedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedModel.m; sourceTree = "<group>"; };
+		0C581792201F11D300B63BBA /* TCVServiceSupportedListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedListVC.h; sourceTree = "<group>"; };
+		0C581793201F11D300B63BBA /* TCVServiceSupportedListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedListVC.m; sourceTree = "<group>"; };
+		0C581795201F11D300B63BBA /* TCVBackRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVBackRoundView.h; sourceTree = "<group>"; };
+		0C581796201F11D300B63BBA /* TCVBackRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVBackRoundView.m; sourceTree = "<group>"; };
+		0C581797201F11D300B63BBA /* TCVServiceSupportedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceSupportedCell.h; sourceTree = "<group>"; };
+		0C581798201F11D300B63BBA /* TCVServiceSupportedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceSupportedCell.m; sourceTree = "<group>"; };
+		0C581799201F11D300B63BBA /* TCVServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceViewController.h; sourceTree = "<group>"; };
+		0C58179A201F11D300B63BBA /* TCVServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceViewController.m; sourceTree = "<group>"; };
+		0C58179C201F11D300B63BBA /* TCVServiceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVServiceListCell.h; sourceTree = "<group>"; };
+		0C58179D201F11D300B63BBA /* TCVServiceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVServiceListCell.m; sourceTree = "<group>"; };
+		0C58179F201F11D300B63BBA /* TCVSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVSettingViewController.h; sourceTree = "<group>"; };
+		0C5817A0201F11D300B63BBA /* TCVSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVSettingViewController.m; sourceTree = "<group>"; };
+		0C5817A2201F11D300B63BBA /* TCVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVTabBarController.h; sourceTree = "<group>"; };
+		0C5817A3201F11D300B63BBA /* TCVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVTabBarController.m; sourceTree = "<group>"; };
+		0C5817A5201F11D300B63BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C5817A7201F11D300B63BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C5817A8201F11D300B63BBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C5817A9201F11D300B63BBA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0C5817AB201F11D300B63BBA /* TextCoderViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextCoderViewer.xcdatamodel; sourceTree = "<group>"; };
+		0C5817AF201F11D300B63BBA /* TCVAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAccount.h; sourceTree = "<group>"; };
+		0C5817B0201F11D300B63BBA /* TCVAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccount.m; sourceTree = "<group>"; };
+		0C5817B1201F11D300B63BBA /* TCVAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAccountTool.h; sourceTree = "<group>"; };
+		0C5817B2201F11D300B63BBA /* TCVAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAccountTool.m; sourceTree = "<group>"; };
+		0C5817B4201F11D300B63BBA /* TCVAppTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVAppTool.h; sourceTree = "<group>"; };
+		0C5817B5201F11D300B63BBA /* TCVAppTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVAppTool.m; sourceTree = "<group>"; };
+		0C5817B7201F11D300B63BBA /* TCVDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVDataTool.h; sourceTree = "<group>"; };
+		0C5817B8201F11D300B63BBA /* TCVDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVDataTool.m; sourceTree = "<group>"; };
+		0C5817BA201F11D300B63BBA /* TCVFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVFileTool.h; sourceTree = "<group>"; };
+		0C5817BB201F11D300B63BBA /* TCVFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVFileTool.m; sourceTree = "<group>"; };
+		0C5817BE201F11D300B63BBA /* TCVGitHubApiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubApiSDK.h; sourceTree = "<group>"; };
+		0C5817BF201F11D300B63BBA /* TCVGitHubApiSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubApiSDK.m; sourceTree = "<group>"; };
+		0C5817C0201F11D300B63BBA /* TCVHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVHttpTool.h; sourceTree = "<group>"; };
+		0C5817C1201F11D300B63BBA /* TCVHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVHttpTool.m; sourceTree = "<group>"; };
 		1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextCoderViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABB0AF2980A0AD0E1AE844D /* Pods-TextCoderViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.release.xcconfig"; sourceTree = "<group>"; };
 		D5967FA60635AD2C52AEB969 /* Pods-TextCoderViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +125,7 @@
 		0C50E32C200608AE002E9132 = {
 			isa = PBXGroup;
 			children = (
-				0C934291201B2D1300663244 /* TextCoderViewer */,
+				0C581764201F11D300B63BBA /* TextCoderViewer */,
 				0C50E336200608AE002E9132 /* Products */,
 				A63C486CBCF5ED1AD4BC27E1 /* Pods */,
 				929CD03211A02E456C33357C /* Frameworks */,
@@ -136,292 +140,310 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C934291201B2D1300663244 /* TextCoderViewer */ = {
+		0C581764201F11D300B63BBA /* TextCoderViewer */ = {
 			isa = PBXGroup;
 			children = (
-				0C934292201B2D1300663244 /* AppDelegate.h */,
-				0C934293201B2D1300663244 /* AppDelegate.m */,
-				0C934294201B2D1300663244 /* Categories */,
-				0C934296201B2D1300663244 /* Info.plist */,
-				0C934297201B2D1300663244 /* Main */,
-				0C9342CD201B2D1300663244 /* OtherFile */,
-				0C9342D2201B2D1300663244 /* PrefixHeader.pch */,
-				0C9342D3201B2D1300663244 /* TextCoderViewer.xcdatamodeld */,
-				0C9342D5201B2D1300663244 /* Tools */,
+				0C581765201F11D300B63BBA /* AppDelegate.h */,
+				0C581766201F11D300B63BBA /* AppDelegate.m */,
+				0C581767201F11D300B63BBA /* Categories */,
+				0C581769201F11D300B63BBA /* Info.plist */,
+				0C58176A201F11D300B63BBA /* Main */,
+				0C5817A4201F11D300B63BBA /* OtherFile */,
+				0C5817A9201F11D300B63BBA /* PrefixHeader.pch */,
+				0C5817AA201F11D300B63BBA /* TextCoderViewer.xcdatamodeld */,
+				0C5817AC201F11D300B63BBA /* Tools */,
 			);
 			path = TextCoderViewer;
 			sourceTree = "<group>";
 		};
-		0C934294201B2D1300663244 /* Categories */ = {
+		0C581767201F11D300B63BBA /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				0C934295201B2D1300663244 /* Singleton.h */,
+				0C581768201F11D300B63BBA /* Singleton.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		0C934297201B2D1300663244 /* Main */ = {
+		0C58176A201F11D300B63BBA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0C934298201B2D1300663244 /* Document */,
-				0C9342A4201B2D1300663244 /* Navigation */,
-				0C9342A7201B2D1300663244 /* Service */,
-				0C9342C7201B2D1300663244 /* Setting */,
-				0C9342CA201B2D1300663244 /* Tabbar */,
+				0C58176B201F11D300B63BBA /* Document */,
+				0C581777201F11D300B63BBA /* Navigation */,
+				0C58177A201F11D300B63BBA /* Service */,
+				0C58179E201F11D300B63BBA /* Setting */,
+				0C5817A1201F11D300B63BBA /* Tabbar */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		0C934298201B2D1300663244 /* Document */ = {
+		0C58176B201F11D300B63BBA /* Document */ = {
 			isa = PBXGroup;
 			children = (
-				0C934299201B2D1300663244 /* Model */,
-				0C93429C201B2D1300663244 /* ShowDocument */,
-				0C93429F201B2D1300663244 /* TCVDocumentViewController.h */,
-				0C9342A0201B2D1300663244 /* TCVDocumentViewController.m */,
-				0C9342A1201B2D1300663244 /* View */,
+				0C58176C201F11D300B63BBA /* Model */,
+				0C58176F201F11D300B63BBA /* ShowDocument */,
+				0C581772201F11D300B63BBA /* TCVDocumentViewController.h */,
+				0C581773201F11D300B63BBA /* TCVDocumentViewController.m */,
+				0C581774201F11D300B63BBA /* View */,
 			);
 			path = Document;
 			sourceTree = "<group>";
 		};
-		0C934299201B2D1300663244 /* Model */ = {
+		0C58176C201F11D300B63BBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0C93429A201B2D1300663244 /* TCVFileModel.h */,
-				0C93429B201B2D1300663244 /* TCVFileModel.m */,
+				0C58176D201F11D300B63BBA /* TCVFileModel.h */,
+				0C58176E201F11D300B63BBA /* TCVFileModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0C93429C201B2D1300663244 /* ShowDocument */ = {
+		0C58176F201F11D300B63BBA /* ShowDocument */ = {
 			isa = PBXGroup;
 			children = (
-				0C93429D201B2D1300663244 /* TCVShowDocumentVC.h */,
-				0C93429E201B2D1300663244 /* TCVShowDocumentVC.m */,
+				0C581770201F11D300B63BBA /* TCVShowDocumentVC.h */,
+				0C581771201F11D300B63BBA /* TCVShowDocumentVC.m */,
 			);
 			path = ShowDocument;
 			sourceTree = "<group>";
 		};
-		0C9342A1201B2D1300663244 /* View */ = {
+		0C581774201F11D300B63BBA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342A2201B2D1300663244 /* TCVFileListCell.h */,
-				0C9342A3201B2D1300663244 /* TCVFileListCell.m */,
+				0C581775201F11D300B63BBA /* TCVFileListCell.h */,
+				0C581776201F11D300B63BBA /* TCVFileListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		0C9342A4201B2D1300663244 /* Navigation */ = {
+		0C581777201F11D300B63BBA /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342A5201B2D1300663244 /* TCVNavigationController.h */,
-				0C9342A6201B2D1300663244 /* TCVNavigationController.m */,
+				0C581778201F11D300B63BBA /* TCVNavigationController.h */,
+				0C581779201F11D300B63BBA /* TCVNavigationController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		0C9342A7201B2D1300663244 /* Service */ = {
+		0C58177A201F11D300B63BBA /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342A8201B2D1300663244 /* GitHub */,
-				0C9342B7201B2D1300663244 /* Service Lists */,
-				0C9342C2201B2D1300663244 /* TCVServiceViewController.h */,
-				0C9342C3201B2D1300663244 /* TCVServiceViewController.m */,
-				0C9342C4201B2D1300663244 /* View */,
+				0C58177B201F11D300B63BBA /* GitHub */,
+				0C58178E201F11D300B63BBA /* Service Lists */,
+				0C581799201F11D300B63BBA /* TCVServiceViewController.h */,
+				0C58179A201F11D300B63BBA /* TCVServiceViewController.m */,
+				0C58179B201F11D300B63BBA /* View */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		0C9342A8201B2D1300663244 /* GitHub */ = {
+		0C58177B201F11D300B63BBA /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342A9201B2D1300663244 /* Model */,
-				0C9342AC201B2D1300663244 /* Search */,
-				0C9342B5201B2D1300663244 /* TCVGitHubViewController.h */,
-				0C9342B6201B2D1300663244 /* TCVGitHubViewController.m */,
+				0C58177C201F11D300B63BBA /* Model */,
+				0C581786201F11D300B63BBA /* Search */,
+				0C58178C201F11D300B63BBA /* TCVGitHubViewController.h */,
+				0C58178D201F11D300B63BBA /* TCVGitHubViewController.m */,
 			);
 			path = GitHub;
 			sourceTree = "<group>";
 		};
-		0C9342A9201B2D1300663244 /* Model */ = {
+		0C58177C201F11D300B63BBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342AA201B2D1300663244 /* TCVAccountOfGithub.h */,
-				0C9342AB201B2D1300663244 /* TCVAccountOfGithub.m */,
+				0C58177D201F11D300B63BBA /* Account */,
+				0C581780201F11D300B63BBA /* License */,
+				0C581783201F11D300B63BBA /* Repositories */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0C9342AC201B2D1300663244 /* Search */ = {
+		0C58177D201F11D300B63BBA /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342AD201B2D1300663244 /* Model */,
-				0C9342B0201B2D1300663244 /* TCVGitHubSearchController.h */,
-				0C9342B1201B2D1300663244 /* TCVGitHubSearchController.m */,
-				0C9342B2201B2D1300663244 /* View */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		0C9342AD201B2D1300663244 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342AE201B2D1300663244 /* TCVGitHubRepositoriesModel.h */,
-				0C9342AF201B2D1300663244 /* TCVGitHubRepositoriesModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0C9342B2201B2D1300663244 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342B3201B2D1300663244 /* TCVGitHubRepositoriesCell.h */,
-				0C9342B4201B2D1300663244 /* TCVGitHubRepositoriesCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0C9342B7201B2D1300663244 /* Service Lists */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342B8201B2D1300663244 /* Model */,
-				0C9342BB201B2D1300663244 /* TCVServiceSupportedListVC.h */,
-				0C9342BC201B2D1300663244 /* TCVServiceSupportedListVC.m */,
-				0C9342BD201B2D1300663244 /* View */,
-			);
-			path = "Service Lists";
-			sourceTree = "<group>";
-		};
-		0C9342B8201B2D1300663244 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342B9201B2D1300663244 /* TCVServiceSupportedModel.h */,
-				0C9342BA201B2D1300663244 /* TCVServiceSupportedModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0C9342BD201B2D1300663244 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342BE201B2D1300663244 /* TCVBackRoundView.h */,
-				0C9342BF201B2D1300663244 /* TCVBackRoundView.m */,
-				0C9342C0201B2D1300663244 /* TCVServiceSupportedCell.h */,
-				0C9342C1201B2D1300663244 /* TCVServiceSupportedCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0C9342C4201B2D1300663244 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342C5201B2D1300663244 /* TCVServiceListCell.h */,
-				0C9342C6201B2D1300663244 /* TCVServiceListCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0C9342C7201B2D1300663244 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342C8201B2D1300663244 /* TCVSettingViewController.h */,
-				0C9342C9201B2D1300663244 /* TCVSettingViewController.m */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		0C9342CA201B2D1300663244 /* Tabbar */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342CB201B2D1300663244 /* TCVTabBarController.h */,
-				0C9342CC201B2D1300663244 /* TCVTabBarController.m */,
-			);
-			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		0C9342CD201B2D1300663244 /* OtherFile */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342CE201B2D1300663244 /* Assets.xcassets */,
-				0C9342CF201B2D1300663244 /* LaunchScreen.storyboard */,
-				0C9342D1201B2D1300663244 /* main.m */,
-			);
-			path = OtherFile;
-			sourceTree = "<group>";
-		};
-		0C9342D5201B2D1300663244 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342D6201B2D1300663244 /* Account */,
-				0C9342DC201B2D1300663244 /* App */,
-				0C9342DF201B2D1300663244 /* Data */,
-				0C9342E2201B2D1300663244 /* File */,
-				0C9342E5201B2D1300663244 /* Http */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		0C9342D6201B2D1300663244 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				0C9342D7201B2D1300663244 /* Model */,
-				0C9342DA201B2D1300663244 /* TCVAccountTool.h */,
-				0C9342DB201B2D1300663244 /* TCVAccountTool.m */,
+				0C58177E201F11D300B63BBA /* TCVAccountOfGithub.h */,
+				0C58177F201F11D300B63BBA /* TCVAccountOfGithub.m */,
 			);
 			path = Account;
 			sourceTree = "<group>";
 		};
-		0C9342D7201B2D1300663244 /* Model */ = {
+		0C581780201F11D300B63BBA /* License */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342D8201B2D1300663244 /* TCVAccount.h */,
-				0C9342D9201B2D1300663244 /* TCVAccount.m */,
+				0C581781201F11D300B63BBA /* TCVGitHubLicenseModel.h */,
+				0C581782201F11D300B63BBA /* TCVGitHubLicenseModel.m */,
+			);
+			path = License;
+			sourceTree = "<group>";
+		};
+		0C581783201F11D300B63BBA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0C581784201F11D300B63BBA /* TCVGitHubRepositoriesModel.h */,
+				0C581785201F11D300B63BBA /* TCVGitHubRepositoriesModel.m */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0C581786201F11D300B63BBA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0C581787201F11D300B63BBA /* TCVGitHubSearchController.h */,
+				0C581788201F11D300B63BBA /* TCVGitHubSearchController.m */,
+				0C581789201F11D300B63BBA /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0C581789201F11D300B63BBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C58178A201F11D300B63BBA /* TCVGitHubRepositoriesCell.h */,
+				0C58178B201F11D300B63BBA /* TCVGitHubRepositoriesCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C58178E201F11D300B63BBA /* Service Lists */ = {
+			isa = PBXGroup;
+			children = (
+				0C58178F201F11D300B63BBA /* Model */,
+				0C581792201F11D300B63BBA /* TCVServiceSupportedListVC.h */,
+				0C581793201F11D300B63BBA /* TCVServiceSupportedListVC.m */,
+				0C581794201F11D300B63BBA /* View */,
+			);
+			path = "Service Lists";
+			sourceTree = "<group>";
+		};
+		0C58178F201F11D300B63BBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C581790201F11D300B63BBA /* TCVServiceSupportedModel.h */,
+				0C581791201F11D300B63BBA /* TCVServiceSupportedModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0C9342DC201B2D1300663244 /* App */ = {
+		0C581794201F11D300B63BBA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342DD201B2D1300663244 /* TCVAppTool.h */,
-				0C9342DE201B2D1300663244 /* TCVAppTool.m */,
+				0C581795201F11D300B63BBA /* TCVBackRoundView.h */,
+				0C581796201F11D300B63BBA /* TCVBackRoundView.m */,
+				0C581797201F11D300B63BBA /* TCVServiceSupportedCell.h */,
+				0C581798201F11D300B63BBA /* TCVServiceSupportedCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C58179B201F11D300B63BBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C58179C201F11D300B63BBA /* TCVServiceListCell.h */,
+				0C58179D201F11D300B63BBA /* TCVServiceListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C58179E201F11D300B63BBA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0C58179F201F11D300B63BBA /* TCVSettingViewController.h */,
+				0C5817A0201F11D300B63BBA /* TCVSettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0C5817A1201F11D300B63BBA /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				0C5817A2201F11D300B63BBA /* TCVTabBarController.h */,
+				0C5817A3201F11D300B63BBA /* TCVTabBarController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		0C5817A4201F11D300B63BBA /* OtherFile */ = {
+			isa = PBXGroup;
+			children = (
+				0C5817A5201F11D300B63BBA /* Assets.xcassets */,
+				0C5817A6201F11D300B63BBA /* LaunchScreen.storyboard */,
+				0C5817A8201F11D300B63BBA /* main.m */,
+			);
+			path = OtherFile;
+			sourceTree = "<group>";
+		};
+		0C5817AC201F11D300B63BBA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0C5817AD201F11D300B63BBA /* Account */,
+				0C5817B3201F11D300B63BBA /* App */,
+				0C5817B6201F11D300B63BBA /* Data */,
+				0C5817B9201F11D300B63BBA /* File */,
+				0C5817BC201F11D300B63BBA /* Http */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0C5817AD201F11D300B63BBA /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				0C5817AE201F11D300B63BBA /* Model */,
+				0C5817B1201F11D300B63BBA /* TCVAccountTool.h */,
+				0C5817B2201F11D300B63BBA /* TCVAccountTool.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		0C5817AE201F11D300B63BBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C5817AF201F11D300B63BBA /* TCVAccount.h */,
+				0C5817B0201F11D300B63BBA /* TCVAccount.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C5817B3201F11D300B63BBA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0C5817B4201F11D300B63BBA /* TCVAppTool.h */,
+				0C5817B5201F11D300B63BBA /* TCVAppTool.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		0C9342DF201B2D1300663244 /* Data */ = {
+		0C5817B6201F11D300B63BBA /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342E0201B2D1300663244 /* TCVDataTool.h */,
-				0C9342E1201B2D1300663244 /* TCVDataTool.m */,
+				0C5817B7201F11D300B63BBA /* TCVDataTool.h */,
+				0C5817B8201F11D300B63BBA /* TCVDataTool.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		0C9342E2201B2D1300663244 /* File */ = {
+		0C5817B9201F11D300B63BBA /* File */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342E3201B2D1300663244 /* TCVFileTool.h */,
-				0C9342E4201B2D1300663244 /* TCVFileTool.m */,
+				0C5817BA201F11D300B63BBA /* TCVFileTool.h */,
+				0C5817BB201F11D300B63BBA /* TCVFileTool.m */,
 			);
 			path = File;
 			sourceTree = "<group>";
 		};
-		0C9342E5201B2D1300663244 /* Http */ = {
+		0C5817BC201F11D300B63BBA /* Http */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342E6201B2D1300663244 /* GitHubApi */,
-				0C9342E9201B2D1300663244 /* TCVHttpTool.h */,
-				0C9342EA201B2D1300663244 /* TCVHttpTool.m */,
+				0C5817BD201F11D300B63BBA /* GitHubApi */,
+				0C5817C0201F11D300B63BBA /* TCVHttpTool.h */,
+				0C5817C1201F11D300B63BBA /* TCVHttpTool.m */,
 			);
 			path = Http;
 			sourceTree = "<group>";
 		};
-		0C9342E6201B2D1300663244 /* GitHubApi */ = {
+		0C5817BD201F11D300B63BBA /* GitHubApi */ = {
 			isa = PBXGroup;
 			children = (
-				0C9342E7201B2D1300663244 /* TCVGitHubApiSDK.h */,
-				0C9342E8201B2D1300663244 /* TCVGitHubApiSDK.m */,
+				0C5817BE201F11D300B63BBA /* TCVGitHubApiSDK.h */,
+				0C5817BF201F11D300B63BBA /* TCVGitHubApiSDK.m */,
 			);
 			path = GitHubApi;
 			sourceTree = "<group>";
@@ -505,8 +527,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C934300201B2D1300663244 /* LaunchScreen.storyboard in Resources */,
-				0C9342FF201B2D1300663244 /* Assets.xcassets in Resources */,
+				0C5817D8201F11D400B63BBA /* LaunchScreen.storyboard in Resources */,
+				0C5817D7201F11D400B63BBA /* Assets.xcassets in Resources */,
+				0C5817C3201F11D300B63BBA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,44 +591,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9342F9201B2D1300663244 /* TCVBackRoundView.m in Sources */,
-				0C934304201B2D1300663244 /* TCVAccountTool.m in Sources */,
-				0C9342FD201B2D1300663244 /* TCVSettingViewController.m in Sources */,
-				0C934308201B2D1300663244 /* TCVGitHubApiSDK.m in Sources */,
-				0C934307201B2D1300663244 /* TCVFileTool.m in Sources */,
-				0C934302201B2D1300663244 /* TextCoderViewer.xcdatamodeld in Sources */,
-				0C9342F4201B2D1300663244 /* TCVGitHubSearchController.m in Sources */,
-				0C9342FB201B2D1300663244 /* TCVServiceViewController.m in Sources */,
-				0C9342FA201B2D1300663244 /* TCVServiceSupportedCell.m in Sources */,
-				0C9342F3201B2D1300663244 /* TCVGitHubRepositoriesModel.m in Sources */,
-				0C9342F5201B2D1300663244 /* TCVGitHubRepositoriesCell.m in Sources */,
-				0C9342FC201B2D1300663244 /* TCVServiceListCell.m in Sources */,
-				0C9342F8201B2D1300663244 /* TCVServiceSupportedListVC.m in Sources */,
-				0C934305201B2D1300663244 /* TCVAppTool.m in Sources */,
-				0C9342FE201B2D1300663244 /* TCVTabBarController.m in Sources */,
-				0C934303201B2D1300663244 /* TCVAccount.m in Sources */,
-				0C934301201B2D1300663244 /* main.m in Sources */,
-				0C934306201B2D1300663244 /* TCVDataTool.m in Sources */,
-				0C9342F0201B2D1300663244 /* TCVFileListCell.m in Sources */,
-				0C9342EB201B2D1300663244 /* AppDelegate.m in Sources */,
-				0C9342EF201B2D1300663244 /* TCVDocumentViewController.m in Sources */,
-				0C9342EE201B2D1300663244 /* TCVShowDocumentVC.m in Sources */,
-				0C9342ED201B2D1300663244 /* TCVFileModel.m in Sources */,
-				0C9342F2201B2D1300663244 /* TCVAccountOfGithub.m in Sources */,
-				0C9342F1201B2D1300663244 /* TCVNavigationController.m in Sources */,
-				0C9342F7201B2D1300663244 /* TCVServiceSupportedModel.m in Sources */,
-				0C9342F6201B2D1300663244 /* TCVGitHubViewController.m in Sources */,
-				0C934309201B2D1300663244 /* TCVHttpTool.m in Sources */,
+				0C5817CC201F11D300B63BBA /* TCVGitHubSearchController.m in Sources */,
+				0C5817C7201F11D300B63BBA /* TCVFileListCell.m in Sources */,
+				0C5817C2201F11D300B63BBA /* AppDelegate.m in Sources */,
+				0C5817DC201F11D400B63BBA /* TCVAccountTool.m in Sources */,
+				0C5817DD201F11D400B63BBA /* TCVAppTool.m in Sources */,
+				0C5817D0201F11D300B63BBA /* TCVServiceSupportedListVC.m in Sources */,
+				0C5817CB201F11D300B63BBA /* TCVGitHubRepositoriesModel.m in Sources */,
+				0C5817D4201F11D400B63BBA /* TCVServiceListCell.m in Sources */,
+				0C5817CF201F11D300B63BBA /* TCVServiceSupportedModel.m in Sources */,
+				0C5817C6201F11D300B63BBA /* TCVDocumentViewController.m in Sources */,
+				0C5817DF201F11D400B63BBA /* TCVFileTool.m in Sources */,
+				0C5817C5201F11D300B63BBA /* TCVShowDocumentVC.m in Sources */,
+				0C5817D2201F11D400B63BBA /* TCVServiceSupportedCell.m in Sources */,
+				0C5817C4201F11D300B63BBA /* TCVFileModel.m in Sources */,
+				0C5817CE201F11D300B63BBA /* TCVGitHubViewController.m in Sources */,
+				0C5817C9201F11D300B63BBA /* TCVAccountOfGithub.m in Sources */,
+				0C5817E0201F11D400B63BBA /* TCVGitHubApiSDK.m in Sources */,
+				0C5817E1201F11D400B63BBA /* TCVHttpTool.m in Sources */,
+				0C5817D5201F11D400B63BBA /* TCVSettingViewController.m in Sources */,
+				0C5817DA201F11D400B63BBA /* TextCoderViewer.xcdatamodeld in Sources */,
+				0C5817D3201F11D400B63BBA /* TCVServiceViewController.m in Sources */,
+				0C5817CA201F11D300B63BBA /* TCVGitHubLicenseModel.m in Sources */,
+				0C5817CD201F11D300B63BBA /* TCVGitHubRepositoriesCell.m in Sources */,
+				0C5817D6201F11D400B63BBA /* TCVTabBarController.m in Sources */,
+				0C5817DB201F11D400B63BBA /* TCVAccount.m in Sources */,
+				0C5817D1201F11D400B63BBA /* TCVBackRoundView.m in Sources */,
+				0C5817D9201F11D400B63BBA /* main.m in Sources */,
+				0C5817C8201F11D300B63BBA /* TCVNavigationController.m in Sources */,
+				0C5817DE201F11D400B63BBA /* TCVDataTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C9342CF201B2D1300663244 /* LaunchScreen.storyboard */ = {
+		0C5817A6201F11D300B63BBA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0C9342D0201B2D1300663244 /* Base */,
+				0C5817A7201F11D300B63BBA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -775,12 +799,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0C9342D3201B2D1300663244 /* TextCoderViewer.xcdatamodeld */ = {
+		0C5817AA201F11D300B63BBA /* TextCoderViewer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0C9342D4201B2D1300663244 /* TextCoderViewer.xcdatamodel */,
+				0C5817AB201F11D300B63BBA /* TextCoderViewer.xcdatamodel */,
 			);
-			currentVersion = 0C9342D4201B2D1300663244 /* TextCoderViewer.xcdatamodel */;
+			currentVersion = 0C5817AB201F11D300B63BBA /* TextCoderViewer.xcdatamodel */;
 			path = TextCoderViewer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

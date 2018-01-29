@@ -17,6 +17,10 @@ UIFont *UIFontWithBoldSize(CGFloat size) {
     return [UIFont boldSystemFontOfSize:size];
 }
 
+UIFont *UIFontSystemSizeFont(CGFloat size) {
+    return [UIFont systemFontOfSize:size];
+}
+
 UIColor *SystemStyleColorInThisApp(void) {
     return [UIColor colorWithWholeRed:60 green:133 blue:206];
 }

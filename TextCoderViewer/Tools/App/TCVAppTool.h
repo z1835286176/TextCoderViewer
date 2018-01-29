@@ -14,6 +14,7 @@
 singleton_interface(TCVAppTool)
 
 UIFont *UIFontWithBoldSize(CGFloat size);
+UIFont *UIFontSystemSizeFont(CGFloat size);
 
 UIColor *SystemStyleColorInThisApp(void);
 

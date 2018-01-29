@@ -11,6 +11,6 @@
 
 @interface TCVGitHubRepositoriesCell : UITableViewCell
 
-@property (nonatomic, strong) TCVGitHubRepositoriesModel *sepositoriesModel;
+@property (nonatomic, strong) TCVGitHubRepositoriesModel *repositoriesModel;
 
 @end
