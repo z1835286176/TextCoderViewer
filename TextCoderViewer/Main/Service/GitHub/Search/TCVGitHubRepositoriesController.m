@@ -6,10 +6,10 @@
 //  Copyright © 2018年 Garenge. All rights reserved.
 //
 
-#import "TCVGitHubSearchController.h"
+#import "TCVGitHubRepositoriesController.h"
 #import "TCVGitHubRepositoriesCell.h"
 
-@interface TCVGitHubSearchController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
+@interface TCVGitHubRepositoriesController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -17,13 +17,15 @@
 
 @property (nonatomic, strong) NSMutableArray *resultsMArray;
 
+@property (nonatomic, assign) BOOL isToSearch; // default = YES;
+
 @end
 
-@implementation TCVGitHubSearchController
+@implementation TCVGitHubRepositoriesController
 
 - (UITableView *)tableView {
     if(nil == _tableView) {
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 70, self.view.frame.size.width, self.view.frame.size.height - 70) style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 70, self.view.frame.size.width, self.isToSearch ? (self.view.frame.size.height - 70) : (self.view.frame.size.height)) style:UITableViewStylePlain];
         tableView.delegate = self;
         tableView.dataSource = self;
         
@@ -55,7 +57,15 @@
 
 - (instancetype)initWithParentController:(UIViewController *)parentController {
     if(self = [super init]) {
+        self.isToSearch = YES;
         [parentController addChildViewController:self];
+    }
+    return self;
+}
+
+- (instancetype)init {
+    if(self = [super init]) {
+        self.isToSearch = NO;
     }
     return self;
 }
@@ -63,7 +73,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self setUpTopView];
+    
+    if(self.isToSearch) {
+        [self setUpTopView];
+    }
 
 }
 
@@ -158,23 +171,8 @@
                                  @"order" : @"asc",
                                  @"per_page" : @"100",
                                  };
-        [TCVGitHubApiSDK queryRepositoriesWithParameters:params success:^(NSArray *results) {
-            // 查到数据之后
-            self.tableView.hidden = NO;
-            self.indicatorView.hidden = YES;
-            [self.indicatorView stopAnimating];
-            
-            [self.resultsMArray removeAllObjects];
-            
-            [self.resultsMArray addObjectsFromArray:results];
-            
-            // 显示数据
-            
-            [self.tableView reloadData];
-        } fail:^(NSError *error) {
-            self.indicatorView.hidden = YES;
-            [self.indicatorView stopAnimating];
-        }];
+        
+        [self sendRequestToQueryRepositoriesWithParameters:params];
         
     } else {
         return;
@@ -188,5 +186,26 @@
     }
 }
 
+
+#pragma mark http request
+- (void)sendRequestToQueryRepositoriesWithParameters:(NSDictionary *)params {
+    [TCVGitHubApiSDK queryRepositoriesWithParameters:params success:^(NSArray *results) {
+        // 查到数据之后
+        self.tableView.hidden = NO;
+        self.indicatorView.hidden = YES;
+        [self.indicatorView stopAnimating];
+        
+        [self.resultsMArray removeAllObjects];
+        
+        [self.resultsMArray addObjectsFromArray:results];
+        
+        // 显示数据
+        
+        [self.tableView reloadData];
+    } fail:^(NSError *error) {
+        self.indicatorView.hidden = YES;
+        [self.indicatorView stopAnimating];
+    }];
+}
 
 @end

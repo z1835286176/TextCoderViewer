@@ -7,9 +7,9 @@
 //
 
 #import "TCVGitHubViewController.h"
-#import "TCVGitHubSearchController.h"
+#import "TCVGitHubRepositoriesController.h"
 
-@interface TCVGitHubViewController () <UITableViewDelegate, UITableViewDataSource, TCVGitHubSearchControllerDelegate>
+@interface TCVGitHubViewController () <UITableViewDelegate, UITableViewDataSource, TCVGitHubRepositoriesControllerDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -123,6 +123,7 @@
         case 1: {
             if(indexPath.row == 0) {
                 // Your repositories
+                
             } else {
                 // Your stars
             }
@@ -154,9 +155,8 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     // 创建控制器
-    TCVGitHubSearchController *searchController = [[TCVGitHubSearchController alloc] initWithParentController:self];
+    TCVGitHubRepositoriesController *searchController = [[TCVGitHubRepositoriesController alloc] initWithParentController:self];
     searchController.delegate = self;
-    // self.searchController = searchController;
     
     // 添加view
     [searchController.view setFrame:self.view.bounds];
@@ -166,18 +166,18 @@
     [searchController.searchBar becomeFirstResponder];
 }
 
-#pragma mark TCVGitHubSearchControllerDelegate
+#pragma mark TCVGitHubRepositoriesControllerDelegate
 
-- (void)willDismissSearchController:(TCVGitHubSearchController *)searchController {
+- (void)willDismissSearchController:(TCVGitHubRepositoriesController *)searchController {
     [self.wholeView removeFromSuperview];
     self.wholeView = nil;
 }
 
-- (void)didDismissSearchController:(TCVGitHubSearchController *)searchController {
+- (void)didDismissSearchController:(TCVGitHubRepositoriesController *)searchController {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-- (void)begainToOnSearchController:(TCVGitHubSearchController *)searchController {
+- (void)begainToOnSearchController:(TCVGitHubRepositoriesController *)searchController {
     
 }
 

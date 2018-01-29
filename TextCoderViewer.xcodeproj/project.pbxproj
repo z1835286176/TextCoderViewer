@@ -17,7 +17,7 @@
 		0C5817C9201F11D300B63BBA /* TCVAccountOfGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58177F201F11D300B63BBA /* TCVAccountOfGithub.m */; };
 		0C5817CA201F11D300B63BBA /* TCVGitHubLicenseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581782201F11D300B63BBA /* TCVGitHubLicenseModel.m */; };
 		0C5817CB201F11D300B63BBA /* TCVGitHubRepositoriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581785201F11D300B63BBA /* TCVGitHubRepositoriesModel.m */; };
-		0C5817CC201F11D300B63BBA /* TCVGitHubSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581788201F11D300B63BBA /* TCVGitHubSearchController.m */; };
+		0C5817CC201F11D300B63BBA /* TCVGitHubRepositoriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581788201F11D300B63BBA /* TCVGitHubRepositoriesController.m */; };
 		0C5817CD201F11D300B63BBA /* TCVGitHubRepositoriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58178B201F11D300B63BBA /* TCVGitHubRepositoriesCell.m */; };
 		0C5817CE201F11D300B63BBA /* TCVGitHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C58178D201F11D300B63BBA /* TCVGitHubViewController.m */; };
 		0C5817CF201F11D300B63BBA /* TCVServiceSupportedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C581791201F11D300B63BBA /* TCVServiceSupportedModel.m */; };
@@ -39,6 +39,7 @@
 		0C5817DF201F11D400B63BBA /* TCVFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817BB201F11D300B63BBA /* TCVFileTool.m */; };
 		0C5817E0201F11D400B63BBA /* TCVGitHubApiSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817BF201F11D300B63BBA /* TCVGitHubApiSDK.m */; };
 		0C5817E1201F11D400B63BBA /* TCVHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5817C1201F11D300B63BBA /* TCVHttpTool.m */; };
+		0CC2A999201F19C200146F79 /* TCVGitHubRepositoriesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC2A998201F19C200146F79 /* TCVGitHubRepositoriesTableView.m */; };
 		48CBEEB95F54C13422AFFBA6 /* libPods-TextCoderViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +65,8 @@
 		0C581782201F11D300B63BBA /* TCVGitHubLicenseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubLicenseModel.m; sourceTree = "<group>"; };
 		0C581784201F11D300B63BBA /* TCVGitHubRepositoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesModel.h; sourceTree = "<group>"; };
 		0C581785201F11D300B63BBA /* TCVGitHubRepositoriesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesModel.m; sourceTree = "<group>"; };
-		0C581787201F11D300B63BBA /* TCVGitHubSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubSearchController.h; sourceTree = "<group>"; };
-		0C581788201F11D300B63BBA /* TCVGitHubSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubSearchController.m; sourceTree = "<group>"; };
+		0C581787201F11D300B63BBA /* TCVGitHubRepositoriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesController.h; sourceTree = "<group>"; };
+		0C581788201F11D300B63BBA /* TCVGitHubRepositoriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesController.m; sourceTree = "<group>"; };
 		0C58178A201F11D300B63BBA /* TCVGitHubRepositoriesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesCell.h; sourceTree = "<group>"; };
 		0C58178B201F11D300B63BBA /* TCVGitHubRepositoriesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesCell.m; sourceTree = "<group>"; };
 		0C58178C201F11D300B63BBA /* TCVGitHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVGitHubViewController.h; sourceTree = "<group>"; };
@@ -105,6 +106,8 @@
 		0C5817BF201F11D300B63BBA /* TCVGitHubApiSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubApiSDK.m; sourceTree = "<group>"; };
 		0C5817C0201F11D300B63BBA /* TCVHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVHttpTool.h; sourceTree = "<group>"; };
 		0C5817C1201F11D300B63BBA /* TCVHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVHttpTool.m; sourceTree = "<group>"; };
+		0CC2A997201F19C200146F79 /* TCVGitHubRepositoriesTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVGitHubRepositoriesTableView.h; sourceTree = "<group>"; };
+		0CC2A998201F19C200146F79 /* TCVGitHubRepositoriesTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCVGitHubRepositoriesTableView.m; sourceTree = "<group>"; };
 		1A48482A4FB725B2C5BD830D /* libPods-TextCoderViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextCoderViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABB0AF2980A0AD0E1AE844D /* Pods-TextCoderViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.release.xcconfig"; sourceTree = "<group>"; };
 		D5967FA60635AD2C52AEB969 /* Pods-TextCoderViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCoderViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextCoderViewer/Pods-TextCoderViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -287,8 +290,8 @@
 		0C581786201F11D300B63BBA /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				0C581787201F11D300B63BBA /* TCVGitHubSearchController.h */,
-				0C581788201F11D300B63BBA /* TCVGitHubSearchController.m */,
+				0C581787201F11D300B63BBA /* TCVGitHubRepositoriesController.h */,
+				0C581788201F11D300B63BBA /* TCVGitHubRepositoriesController.m */,
 				0C581789201F11D300B63BBA /* View */,
 			);
 			path = Search;
@@ -299,6 +302,8 @@
 			children = (
 				0C58178A201F11D300B63BBA /* TCVGitHubRepositoriesCell.h */,
 				0C58178B201F11D300B63BBA /* TCVGitHubRepositoriesCell.m */,
+				0CC2A997201F19C200146F79 /* TCVGitHubRepositoriesTableView.h */,
+				0CC2A998201F19C200146F79 /* TCVGitHubRepositoriesTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -591,7 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5817CC201F11D300B63BBA /* TCVGitHubSearchController.m in Sources */,
+				0C5817CC201F11D300B63BBA /* TCVGitHubRepositoriesController.m in Sources */,
 				0C5817C7201F11D300B63BBA /* TCVFileListCell.m in Sources */,
 				0C5817C2201F11D300B63BBA /* AppDelegate.m in Sources */,
 				0C5817DC201F11D400B63BBA /* TCVAccountTool.m in Sources */,
@@ -607,6 +612,7 @@
 				0C5817C4201F11D300B63BBA /* TCVFileModel.m in Sources */,
 				0C5817CE201F11D300B63BBA /* TCVGitHubViewController.m in Sources */,
 				0C5817C9201F11D300B63BBA /* TCVAccountOfGithub.m in Sources */,
+				0CC2A999201F19C200146F79 /* TCVGitHubRepositoriesTableView.m in Sources */,
 				0C5817E0201F11D400B63BBA /* TCVGitHubApiSDK.m in Sources */,
 				0C5817E1201F11D400B63BBA /* TCVHttpTool.m in Sources */,
 				0C5817D5201F11D400B63BBA /* TCVSettingViewController.m in Sources */,
